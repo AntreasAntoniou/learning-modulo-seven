@@ -1,0 +1,13 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.DS_Store
+runs/
+report/.style/
+report/build/
+report/*.aux
+report/*.log
+report/*.out
+report/*.bbl
+report/*.blg
+report/qa/

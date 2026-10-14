@@ -1,0 +1,47 @@
+{
+  "experiments/million/config.json": {
+    "sha256": "fa030e049cfff489d342bfa727407f3f9787f99dc7fc7f8739c6b02d0ca843c1",
+    "source_commit": "de2c10e63431100bcf226ce7ab35bc36bc48914e",
+    "unchanged": true
+  },
+  "experiments/million/data.py": {
+    "sha256": "d38ce8c714f04a6f6abf1a24b6ce50c3a5888d9b1d3a56a34fc248a1ae83d3ca",
+    "source_commit": "de2c10e63431100bcf226ce7ab35bc36bc48914e",
+    "unchanged": true
+  },
+  "experiments/million/models.py": {
+    "sha256": "4549302d4e6c134ec8b06143fa2318c110ba6156d1168736c32e083e17f52c8a",
+    "source_commit": "de2c10e63431100bcf226ce7ab35bc36bc48914e",
+    "unchanged": true
+  },
+  "experiments/million/selection.py": {
+    "sha256": "715be532b89f812f6d41b6c52056dfcc058edfcf8df2cc1c7743824683f6d077",
+    "source_commit": "de2c10e63431100bcf226ce7ab35bc36bc48914e",
+    "unchanged": true
+  },
+  "experiments/million/train.py": {
+    "sha256": "9b916e3dacef55d9065dc6065c563f0f2a787a8a23e948471217e28136f4468f",
+    "source_commit": "de2c10e63431100bcf226ce7ab35bc36bc48914e",
+    "unchanged": true
+  },
+  "experiments/observed_bits/modulo-observed-bits.json": {
+    "sha256": "4d5b1f639c6d32f42e01af73556cf35a0b6c0ece1179a92b157f5518b287560c",
+    "source_commit": "78d417c1bae30a7f9edf32715e1aa345d787064c",
+    "unchanged": true
+  },
+  "experiments/observed_bits/suite.py": {
+    "sha256": "2e192c6b28b4f1e2d7547eadaa0bdd5a8061f8a33151a73a8f969f45bb7f838a",
+    "source_commit": "78d417c1bae30a7f9edf32715e1aa345d787064c",
+    "unchanged": true
+  },
+  "experiments/screen/config.json": {
+    "sha256": "3807782d73d5ff524082fc0c539d397ecac7d9d86a605660a94f267e8a5a8849",
+    "source_commit": "68c142af3f3e42f1db597059ceeb7dca17100dc6",
+    "unchanged": true
+  },
+  "experiments/screen/suite.py": {
+    "sha256": "6d5de815b261e0622a1fd4e384e0dd3dd4d6733ef109b7b0634d2d53d7438a8d",
+    "source_commit": "68c142af3f3e42f1db597059ceeb7dca17100dc6",
+    "unchanged": true
+  }
+}

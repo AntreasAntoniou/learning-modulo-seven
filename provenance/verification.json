@@ -1,0 +1,48 @@
+{
+  "completed_screen_historical_audit": {
+    "analysis_source_commit": "37f707422ad972c4731fa65e43af0645cf509d7c",
+    "examples_per_split_per_checkpoint_replay": 16,
+    "hashed_artifacts": 1840,
+    "recomputed_evaluation_sets": 7296,
+    "scope": "Previously completed artifact audit; checkpoint and prediction payloads are not bundled in this public release",
+    "selected_checkpoints_replayed": 912
+  },
+  "million_snapshot_export": {
+    "all_training_window_losses_recomputed": true,
+    "complete_checkpoint_chains": 12,
+    "segments_per_chain": 100,
+    "sha256_verified": true,
+    "test_file_read": false
+  },
+  "protocol_tests": {
+    "count": 40,
+    "environment": "Python 3.11.15, PyTorch 2.14.1 CPU, NumPy 2.4.6",
+    "result": "passed"
+  },
+  "public_recomputed_checks": {
+    "million_snapshot": {
+      "batch_observations": 960000,
+      "completed_fits": 12,
+      "test_evaluated": false,
+      "validation_observations": 24000
+    },
+    "observed_bits": {
+      "fits": 96,
+      "selected_fits": 48,
+      "summary_cells": 16
+    },
+    "screen": {
+      "fits": 1728,
+      "selected_fits": 864,
+      "summary_cells": 288
+    },
+    "unchanged_scientific_files": 9
+  },
+  "report": {
+    "pages": 9,
+    "pdf_sha256": "90a33c29b578aaef80fe9b097f3b0db7ee31ff5e04f5e8b287d00e4d7de9fc72",
+    "rendered_page_review": "Every page visually inspected; appendix numeric table enlarged and re-inspected",
+    "template": "Official NeurIPS 2026, preprint mode"
+  },
+  "scope": "Initial public release; metrics and source, not checkpoint or per-example prediction archives"
+}

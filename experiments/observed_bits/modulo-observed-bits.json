@@ -1,0 +1,110 @@
+{
+  "experiment_id": "nonlinear-modulo-observed-bits-20261013",
+  "data_seed": 1729,
+  "seeds": [
+    101,
+    202,
+    303
+  ],
+  "learning_rates": [
+    0.0003,
+    0.003
+  ],
+  "training_samples": [
+    65536
+  ],
+  "parameter_target": 32768,
+  "steps": 1200,
+  "batch_size": 128,
+  "eval_every": 100,
+  "tasks": [
+    "modulo_bits_observed"
+  ],
+  "variants": [
+    {
+      "name": "mlp3",
+      "family": "mlp",
+      "depth": 3
+    },
+    {
+      "name": "mlp20",
+      "family": "mlp",
+      "depth": 20
+    },
+    {
+      "name": "mlp50",
+      "family": "mlp",
+      "depth": 50
+    },
+    {
+      "name": "resmlp20",
+      "family": "resmlp",
+      "depth": 20
+    },
+    {
+      "name": "resmlp50",
+      "family": "resmlp",
+      "depth": 50
+    },
+    {
+      "name": "transformer2",
+      "family": "transformer",
+      "depth": 2
+    },
+    {
+      "name": "transformer8",
+      "family": "transformer",
+      "depth": 8
+    },
+    {
+      "name": "transformer12",
+      "family": "transformer",
+      "depth": 12
+    },
+    {
+      "name": "relational2",
+      "family": "relational",
+      "depth": 2
+    },
+    {
+      "name": "relational8",
+      "family": "relational",
+      "depth": 8
+    },
+    {
+      "name": "relational12",
+      "family": "relational",
+      "depth": 12
+    },
+    {
+      "name": "hyper_g2_f3",
+      "family": "hyper",
+      "depth": 2,
+      "f_depth": 3
+    },
+    {
+      "name": "hyper_g8_f3",
+      "family": "hyper",
+      "depth": 8,
+      "f_depth": 3
+    },
+    {
+      "name": "hyper_g12_f3",
+      "family": "hyper",
+      "depth": 12,
+      "f_depth": 3
+    },
+    {
+      "name": "hyper_g8_f1",
+      "family": "hyper",
+      "depth": 8,
+      "f_depth": 1
+    },
+    {
+      "name": "hyper_g8_f5",
+      "family": "hyper",
+      "depth": 8,
+      "f_depth": 5
+    }
+  ]
+}
