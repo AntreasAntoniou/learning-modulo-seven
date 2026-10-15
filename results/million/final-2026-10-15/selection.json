@@ -1,0 +1,430 @@
+{
+  "config_digest": "7dffecb863058f7bed03e28ea7b9d3c453b56b04ebfc93e98b34ddfb3b6626b8",
+  "expected_fit_count": 576,
+  "overall_validation_winners": {
+    "bits": "hyper_g2_f3",
+    "scalar": "relational2"
+  },
+  "selection_rule": "Mean best within-validation cross-entropy across seeds; accuracy tie-break",
+  "source_commit": "de2c10e63431100bcf226ce7ab35bc36bc48914e",
+  "trainval_sha256": "d2c540a42817ded986eec0724b85d23e4423832215c4c772dc8c0fc5083467b0",
+  "original_selection_sha256": "9fc3e171655c21a1a2cfd0aca087d5579f72dac53c6252b2c3a361a8022e52e7",
+  "selected": [
+    {
+      "encoding": "bits",
+      "variant": "hyper_g12_f3",
+      "lr": 0.0003,
+      "weight_decay": 0.0,
+      "mean_validation_loss": 1.2993304424841579,
+      "mean_validation_accuracy": 0.432861328125,
+      "case_ids": [
+        "bits-hyper_g12_f3-wd0-lr0-s101",
+        "bits-hyper_g12_f3-wd0-lr0-s202",
+        "bits-hyper_g12_f3-wd0-lr0-s303"
+      ]
+    },
+    {
+      "encoding": "bits",
+      "variant": "hyper_g2_f3",
+      "lr": 0.0003,
+      "weight_decay": 0.01,
+      "mean_validation_loss": 0.0035511748052764838,
+      "mean_validation_accuracy": 0.9989420572916666,
+      "case_ids": [
+        "bits-hyper_g2_f3-wd1-lr0-s101",
+        "bits-hyper_g2_f3-wd1-lr0-s202",
+        "bits-hyper_g2_f3-wd1-lr0-s303"
+      ]
+    },
+    {
+      "encoding": "bits",
+      "variant": "hyper_g8_f1",
+      "lr": 0.0003,
+      "weight_decay": 0.1,
+      "mean_validation_loss": 1.9451884229977925,
+      "mean_validation_accuracy": 0.15384928385416666,
+      "case_ids": [
+        "bits-hyper_g8_f1-wd2-lr0-s101",
+        "bits-hyper_g8_f1-wd2-lr0-s202",
+        "bits-hyper_g8_f1-wd2-lr0-s303"
+      ]
+    },
+    {
+      "encoding": "bits",
+      "variant": "hyper_g8_f3",
+      "lr": 0.003,
+      "weight_decay": 0.0,
+      "mean_validation_loss": 1.6449844911694527,
+      "mean_validation_accuracy": 0.279052734375,
+      "case_ids": [
+        "bits-hyper_g8_f3-wd0-lr1-s101",
+        "bits-hyper_g8_f3-wd0-lr1-s202",
+        "bits-hyper_g8_f3-wd0-lr1-s303"
+      ]
+    },
+    {
+      "encoding": "bits",
+      "variant": "hyper_g8_f5",
+      "lr": 0.003,
+      "weight_decay": 0.0,
+      "mean_validation_loss": 0.07118978456128389,
+      "mean_validation_accuracy": 0.9769287109375,
+      "case_ids": [
+        "bits-hyper_g8_f5-wd0-lr1-s101",
+        "bits-hyper_g8_f5-wd0-lr1-s202",
+        "bits-hyper_g8_f5-wd0-lr1-s303"
+      ]
+    },
+    {
+      "encoding": "bits",
+      "variant": "mlp20",
+      "lr": 0.003,
+      "weight_decay": 0.0,
+      "mean_validation_loss": 1.9456074833869934,
+      "mean_validation_accuracy": 0.14794921875,
+      "case_ids": [
+        "bits-mlp20-wd0-lr1-s101",
+        "bits-mlp20-wd0-lr1-s202",
+        "bits-mlp20-wd0-lr1-s303"
+      ]
+    },
+    {
+      "encoding": "bits",
+      "variant": "mlp3",
+      "lr": 0.003,
+      "weight_decay": 0.1,
+      "mean_validation_loss": 1.9452646523714066,
+      "mean_validation_accuracy": 0.1514892578125,
+      "case_ids": [
+        "bits-mlp3-wd2-lr1-s101",
+        "bits-mlp3-wd2-lr1-s202",
+        "bits-mlp3-wd2-lr1-s303"
+      ]
+    },
+    {
+      "encoding": "bits",
+      "variant": "mlp50",
+      "lr": 0.003,
+      "weight_decay": 0.1,
+      "mean_validation_loss": 1.9456063161293666,
+      "mean_validation_accuracy": 0.14794921875,
+      "case_ids": [
+        "bits-mlp50-wd2-lr1-s101",
+        "bits-mlp50-wd2-lr1-s202",
+        "bits-mlp50-wd2-lr1-s303"
+      ]
+    },
+    {
+      "encoding": "bits",
+      "variant": "relational12",
+      "lr": 0.0003,
+      "weight_decay": 0.0,
+      "mean_validation_loss": 1.9455789526303608,
+      "mean_validation_accuracy": 0.1488037109375,
+      "case_ids": [
+        "bits-relational12-wd0-lr0-s101",
+        "bits-relational12-wd0-lr0-s202",
+        "bits-relational12-wd0-lr0-s303"
+      ]
+    },
+    {
+      "encoding": "bits",
+      "variant": "relational2",
+      "lr": 0.0003,
+      "weight_decay": 0.0,
+      "mean_validation_loss": 1.9455861796935399,
+      "mean_validation_accuracy": 0.14957682291666666,
+      "case_ids": [
+        "bits-relational2-wd0-lr0-s101",
+        "bits-relational2-wd0-lr0-s202",
+        "bits-relational2-wd0-lr0-s303"
+      ]
+    },
+    {
+      "encoding": "bits",
+      "variant": "relational8",
+      "lr": 0.0003,
+      "weight_decay": 0.0,
+      "mean_validation_loss": 1.945585275689761,
+      "mean_validation_accuracy": 0.14864095052083334,
+      "case_ids": [
+        "bits-relational8-wd0-lr0-s101",
+        "bits-relational8-wd0-lr0-s202",
+        "bits-relational8-wd0-lr0-s303"
+      ]
+    },
+    {
+      "encoding": "bits",
+      "variant": "resmlp20",
+      "lr": 0.003,
+      "weight_decay": 0.0,
+      "mean_validation_loss": 1.296960679677909,
+      "mean_validation_accuracy": 0.4331868489583333,
+      "case_ids": [
+        "bits-resmlp20-wd0-lr1-s101",
+        "bits-resmlp20-wd0-lr1-s202",
+        "bits-resmlp20-wd0-lr1-s303"
+      ]
+    },
+    {
+      "encoding": "bits",
+      "variant": "resmlp50",
+      "lr": 0.003,
+      "weight_decay": 0.0,
+      "mean_validation_loss": 1.2970555017903582,
+      "mean_validation_accuracy": 0.4328206380208333,
+      "case_ids": [
+        "bits-resmlp50-wd0-lr1-s101",
+        "bits-resmlp50-wd0-lr1-s202",
+        "bits-resmlp50-wd0-lr1-s303"
+      ]
+    },
+    {
+      "encoding": "bits",
+      "variant": "transformer12",
+      "lr": 0.0003,
+      "weight_decay": 0.0,
+      "mean_validation_loss": 1.945606937011083,
+      "mean_validation_accuracy": 0.14794921875,
+      "case_ids": [
+        "bits-transformer12-wd0-lr0-s101",
+        "bits-transformer12-wd0-lr0-s202",
+        "bits-transformer12-wd0-lr0-s303"
+      ]
+    },
+    {
+      "encoding": "bits",
+      "variant": "transformer2",
+      "lr": 0.0003,
+      "weight_decay": 0.0,
+      "mean_validation_loss": 1.9455995510021846,
+      "mean_validation_accuracy": 0.14794921875,
+      "case_ids": [
+        "bits-transformer2-wd0-lr0-s101",
+        "bits-transformer2-wd0-lr0-s202",
+        "bits-transformer2-wd0-lr0-s303"
+      ]
+    },
+    {
+      "encoding": "bits",
+      "variant": "transformer8",
+      "lr": 0.0003,
+      "weight_decay": 0.0,
+      "mean_validation_loss": 1.9456087698539097,
+      "mean_validation_accuracy": 0.14794921875,
+      "case_ids": [
+        "bits-transformer8-wd0-lr0-s101",
+        "bits-transformer8-wd0-lr0-s202",
+        "bits-transformer8-wd0-lr0-s303"
+      ]
+    },
+    {
+      "encoding": "scalar",
+      "variant": "hyper_g12_f3",
+      "lr": 0.0003,
+      "weight_decay": 0.0,
+      "mean_validation_loss": 1.9453494896491368,
+      "mean_validation_accuracy": 0.14750162760416666,
+      "case_ids": [
+        "scalar-hyper_g12_f3-wd0-lr0-s101",
+        "scalar-hyper_g12_f3-wd0-lr0-s202",
+        "scalar-hyper_g12_f3-wd0-lr0-s303"
+      ]
+    },
+    {
+      "encoding": "scalar",
+      "variant": "hyper_g2_f3",
+      "lr": 0.003,
+      "weight_decay": 0.0,
+      "mean_validation_loss": 1.9451949646075566,
+      "mean_validation_accuracy": 0.15214029947916666,
+      "case_ids": [
+        "scalar-hyper_g2_f3-wd0-lr1-s101",
+        "scalar-hyper_g2_f3-wd0-lr1-s202",
+        "scalar-hyper_g2_f3-wd0-lr1-s303"
+      ]
+    },
+    {
+      "encoding": "scalar",
+      "variant": "hyper_g8_f1",
+      "lr": 0.003,
+      "weight_decay": 0.01,
+      "mean_validation_loss": 1.945157175262769,
+      "mean_validation_accuracy": 0.14835611979166666,
+      "case_ids": [
+        "scalar-hyper_g8_f1-wd1-lr1-s101",
+        "scalar-hyper_g8_f1-wd1-lr1-s202",
+        "scalar-hyper_g8_f1-wd1-lr1-s303"
+      ]
+    },
+    {
+      "encoding": "scalar",
+      "variant": "hyper_g8_f3",
+      "lr": 0.0003,
+      "weight_decay": 0.0,
+      "mean_validation_loss": 1.9453852872053783,
+      "mean_validation_accuracy": 0.1483154296875,
+      "case_ids": [
+        "scalar-hyper_g8_f3-wd0-lr0-s101",
+        "scalar-hyper_g8_f3-wd0-lr0-s202",
+        "scalar-hyper_g8_f3-wd0-lr0-s303"
+      ]
+    },
+    {
+      "encoding": "scalar",
+      "variant": "hyper_g8_f5",
+      "lr": 0.003,
+      "weight_decay": 0.01,
+      "mean_validation_loss": 1.9455321778853734,
+      "mean_validation_accuracy": 0.14778645833333334,
+      "case_ids": [
+        "scalar-hyper_g8_f5-wd1-lr1-s101",
+        "scalar-hyper_g8_f5-wd1-lr1-s202",
+        "scalar-hyper_g8_f5-wd1-lr1-s303"
+      ]
+    },
+    {
+      "encoding": "scalar",
+      "variant": "mlp20",
+      "lr": 0.003,
+      "weight_decay": 0.01,
+      "mean_validation_loss": 1.9456041554609935,
+      "mean_validation_accuracy": 0.14750162760416666,
+      "case_ids": [
+        "scalar-mlp20-wd1-lr1-s101",
+        "scalar-mlp20-wd1-lr1-s202",
+        "scalar-mlp20-wd1-lr1-s303"
+      ]
+    },
+    {
+      "encoding": "scalar",
+      "variant": "mlp3",
+      "lr": 0.0003,
+      "weight_decay": 0.0,
+      "mean_validation_loss": 1.9453406284252803,
+      "mean_validation_accuracy": 0.14851888020833334,
+      "case_ids": [
+        "scalar-mlp3-wd0-lr0-s101",
+        "scalar-mlp3-wd0-lr0-s202",
+        "scalar-mlp3-wd0-lr0-s303"
+      ]
+    },
+    {
+      "encoding": "scalar",
+      "variant": "mlp50",
+      "lr": 0.003,
+      "weight_decay": 0.1,
+      "mean_validation_loss": 1.9456070562203724,
+      "mean_validation_accuracy": 0.14794921875,
+      "case_ids": [
+        "scalar-mlp50-wd2-lr1-s101",
+        "scalar-mlp50-wd2-lr1-s202",
+        "scalar-mlp50-wd2-lr1-s303"
+      ]
+    },
+    {
+      "encoding": "scalar",
+      "variant": "relational12",
+      "lr": 0.0003,
+      "weight_decay": 0.0,
+      "mean_validation_loss": 1.9452249457438786,
+      "mean_validation_accuracy": 0.15034993489583334,
+      "case_ids": [
+        "scalar-relational12-wd0-lr0-s101",
+        "scalar-relational12-wd0-lr0-s202",
+        "scalar-relational12-wd0-lr0-s303"
+      ]
+    },
+    {
+      "encoding": "scalar",
+      "variant": "relational2",
+      "lr": 0.0003,
+      "weight_decay": 0.1,
+      "mean_validation_loss": 1.9451284060875575,
+      "mean_validation_accuracy": 0.15043131510416666,
+      "case_ids": [
+        "scalar-relational2-wd2-lr0-s101",
+        "scalar-relational2-wd2-lr0-s202",
+        "scalar-relational2-wd2-lr0-s303"
+      ]
+    },
+    {
+      "encoding": "scalar",
+      "variant": "relational8",
+      "lr": 0.0003,
+      "weight_decay": 0.0,
+      "mean_validation_loss": 1.945190687974294,
+      "mean_validation_accuracy": 0.15091959635416666,
+      "case_ids": [
+        "scalar-relational8-wd0-lr0-s101",
+        "scalar-relational8-wd0-lr0-s202",
+        "scalar-relational8-wd0-lr0-s303"
+      ]
+    },
+    {
+      "encoding": "scalar",
+      "variant": "resmlp20",
+      "lr": 0.0003,
+      "weight_decay": 0.0,
+      "mean_validation_loss": 1.9452859610319138,
+      "mean_validation_accuracy": 0.1514892578125,
+      "case_ids": [
+        "scalar-resmlp20-wd0-lr0-s101",
+        "scalar-resmlp20-wd0-lr0-s202",
+        "scalar-resmlp20-wd0-lr0-s303"
+      ]
+    },
+    {
+      "encoding": "scalar",
+      "variant": "resmlp50",
+      "lr": 0.0003,
+      "weight_decay": 0.0,
+      "mean_validation_loss": 1.945386826992035,
+      "mean_validation_accuracy": 0.148681640625,
+      "case_ids": [
+        "scalar-resmlp50-wd0-lr0-s101",
+        "scalar-resmlp50-wd0-lr0-s202",
+        "scalar-resmlp50-wd0-lr0-s303"
+      ]
+    },
+    {
+      "encoding": "scalar",
+      "variant": "transformer12",
+      "lr": 0.0003,
+      "weight_decay": 0.0,
+      "mean_validation_loss": 1.9455848733584087,
+      "mean_validation_accuracy": 0.1483154296875,
+      "case_ids": [
+        "scalar-transformer12-wd0-lr0-s101",
+        "scalar-transformer12-wd0-lr0-s202",
+        "scalar-transformer12-wd0-lr0-s303"
+      ]
+    },
+    {
+      "encoding": "scalar",
+      "variant": "transformer2",
+      "lr": 0.0003,
+      "weight_decay": 0.01,
+      "mean_validation_loss": 1.9455487579107285,
+      "mean_validation_accuracy": 0.148193359375,
+      "case_ids": [
+        "scalar-transformer2-wd1-lr0-s101",
+        "scalar-transformer2-wd1-lr0-s202",
+        "scalar-transformer2-wd1-lr0-s303"
+      ]
+    },
+    {
+      "encoding": "scalar",
+      "variant": "transformer8",
+      "lr": 0.0003,
+      "weight_decay": 0.0,
+      "mean_validation_loss": 1.9455828020970027,
+      "mean_validation_accuracy": 0.14794921875,
+      "case_ids": [
+        "scalar-transformer8-wd0-lr0-s101",
+        "scalar-transformer8-wd0-lr0-s202",
+        "scalar-transformer8-wd0-lr0-s303"
+      ]
+    }
+  ]
+}

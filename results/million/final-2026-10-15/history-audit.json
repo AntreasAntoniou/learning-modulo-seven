@@ -1,0 +1,11 @@
+{
+  "cases_verified": 576,
+  "checkpoint_segments": 57611,
+  "compressed_metric_bytes": 1260157478,
+  "training_batch_records": 46080000,
+  "validation_records": 1152000,
+  "all_compressed_artifact_hashes_and_gzip_crc_verified": true,
+  "all_metric_file_record_counts_and_endpoints_verified": true,
+  "all_exported_records_schema_checked": true,
+  "raw_histories_in_release_assets": true
+}

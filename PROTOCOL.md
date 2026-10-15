@@ -14,7 +14,7 @@ The data-size comparison holds *steps* fixed. Nominal passes are 600, 37.5 and 2
 
 After the first primary seed was inspected, a 96-fit diagnostic was declared: all sixteen variants, three seeds and two learning rates, 65,536 training examples. It uses 17 bits, within [0,98304), outside [98304,131072), and the same split sizes and training recipe as the short screen. All bits vary during training; the joint highest-two-bit pattern 11 is held out. This changes several factors together and is not an isolated intervention on one bit. It remains separate in results and interpretation.
 
-## Ongoing million-example sweep
+## Completed million-example sweep
 
 The full machine-readable design is [config.json](experiments/million/config.json).
 
@@ -50,7 +50,7 @@ All five splits are mutually disjoint on raw integers; scalar float32 inputs wer
 4. Record an overall validation winner per encoding. Freeze the choices once.
 5. Evaluate the 96 retained models once on both test domains. A create-once fence precedes any test predictions. Training has no test-file input.
 
-The dated v0.1.0 public snapshot contains twelve binary g2/f3 fits and remains unchanged. The local 15 October draft adds a fixed 560-fit snapshot (288 binary and 272 scalar), all 192 planned three-seed recipe cells and twelve illustrative trajectories. Incomplete cells receive no average. Neither snapshot is the final phase or establishes a sweep winner. The draft uses a post-hoc 99% threshold for descriptive counts and post-hoc illustrative curve choices; neither changes the preregistered selection rule. The follow-up changes range and training budget as well as data size, so it is not a fourth point on the primary data-size curve.
+The dated v0.1.0 public snapshot contains twelve binary g2/f3 fits and remains unchanged. The preserved intermediate 15 October draft adds a fixed 560-fit snapshot (288 binary and 272 scalar), all 192 planned three-seed recipe cells and twelve illustrative trajectories. Incomplete cells receive no average. Neither historical snapshot is the final phase or establishes a sweep winner. All 576 fits subsequently completed and the frozen choices were evaluated in one final test phase on 15 October 2026. The final records are in [final-2026-10-15](results/million/final-2026-10-15/); all 96 retained models and both test domains are included. The overall within-validation winners are binary g2/f3 (LR 0.0003, decay 0.01) and scalar relational2 (LR 0.0003, decay 0.1). No test-driven reselection was performed. The draft uses a post-hoc 99% threshold for descriptive counts and post-hoc illustrative curve choices; neither changes the preregistered selection rule. The follow-up changes range and training budget as well as data size, so it is not a fourth point on the primary data-size curve.
 
 ## Architecture definitions
 

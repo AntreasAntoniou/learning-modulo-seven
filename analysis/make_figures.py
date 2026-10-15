@@ -119,3 +119,5 @@ if __name__=='__main__':
     style();primary();live()
     from million_draft import build
     build()
+    from million_final import build as build_final
+    build_final()

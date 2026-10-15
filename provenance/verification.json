@@ -45,51 +45,35 @@
       "early_results_unchanged": 12,
       "test_evaluated": false,
       "sweep_selection_frozen": false
+    },
+    "million_final": {
+      "fits": 576,
+      "complete_recipes": 192,
+      "selected_models": 96,
+      "selected_curve_rows": 192000,
+      "all_selected_statistics_recomputed": true,
+      "prior_560_results_unchanged": true,
+      "release_assets_verified": 35,
+      "release_members_hashed": 1443,
+      "training_batch_windows_recomputed": 46080000,
+      "validation_rows_verified": 1152000,
+      "saved_prediction_rows_rescored": 12582912
     }
   },
   "report": {
-    "pages": 11,
-    "pdf_sha256": "c3ceee8635d9fbab1a4f68532d9d8c4174f2d1a639d7d63bdba43ceb52bc3d58",
-    "rendered_page_review": "All11pages visually inspected; changed pages2,8,11 inspected again after revision. No clipping or overlaps observed.",
+    "pages": 14,
+    "pdf_sha256": "30074a269cc6869de936ebb594822f7c9f3172a86f4167a8ab647b27795dda61",
+    "rendered_page_review": "All 14 pages visually inspected individually; pages 13 and 14 reinspected after rounding and layout corrections. No clipping or overlaps observed.",
     "all_fonts_embedded": true,
-    "https_links": [
-      {
-        "page": 1,
-        "url": "https://antreas.io"
-      },
-      {
-        "page": 1,
-        "url": "https://github.com/AntreasAntoniou/learning-modulo-seven"
-      },
-      {
-        "page": 11,
-        "url": "https://github.com/AntreasAntoniou/learning-modulo-seven"
-      },
-      {
-        "page": 11,
-        "url": "https://github.com/AntreasAntoniou/learning-modulo-seven/releases/tag/v0.1.0"
-      },
-      {
-        "page": 11,
-        "url": "https://arxiv.org/abs/1609.09106"
-      },
-      {
-        "page": 11,
-        "url": "https://arxiv.org/abs/1706.01427"
-      },
-      {
-        "page": 11,
-        "url": "https://arxiv.org/abs/1711.05101"
-      },
-      {
-        "page": 11,
-        "url": "https://arxiv.org/abs/2201.02177"
-      }
-    ],
-    "template": "Official NeurIPS2026, preprint mode; pinned style in report/style.sha256",
-    "latex_unresolved_references_or_layout_warnings": false
+    "template": "Official NeurIPS 2026, preprint mode; pinned style in report/style.sha256",
+    "latex_unresolved_references_or_layout_warnings": false,
+    "https_links": {
+      "count": 8,
+      "existing_targets_http_200": 7,
+      "new_release_target": "Checked after release publication in the external publication receipt; deliberately absent before publication."
+    }
   },
-  "scope": "Local dated draft prepared2026-10-15; completed earlier screen and partial560fit validation-only follow-up. No new public release.",
+  "scope": "Completed primary screen, observed-bit diagnostic and final 576-fit million-example experiment; public release v1.0.0.",
   "draft_history_export": {
     "completed_fits": 560,
     "binary_fits": 288,
@@ -104,9 +88,9 @@
   "claim_audit": {
     "status": "mechanical-checks-pass",
     "exit_code": 0,
-    "artifacts": 37,
-    "claims": 24,
-    "numeric_checks": 65,
+    "artifacts": 55,
+    "claims": 29,
+    "numeric_checks": 93,
     "pending_review": [],
     "limitations": "Checks declared identities and arithmetic only; not scientific validity, coverage or owner approval."
   },
@@ -114,8 +98,29 @@
     "kind": "Codex self-review",
     "owner_voice_approval": false,
     "independent_scientific_review": false,
-    "voice_lint": "CLEAN; provisional heuristic, three candidates adjudicated as non-findings. Not an authenticity certification.",
+    "voice_lint": "CLEAN provisional heuristic. Three candidates adjudicated as non-findings: scientific enumerations, a directly investigated bias hypothesis, and an explicit unresolved mechanism question. This does not establish authentic voice or owner approval.",
     "private_voice_sources_exported": false
   },
-  "verified_utc": "2026-10-15T17:28:25.279579+00:00"
+  "verified_utc": "2026-10-15T18:59:37.346228+00:00",
+  "final_public_recomputed_checks": {
+    "fits": 576,
+    "complete_recipes": 192,
+    "selected_models": 96,
+    "selected_curve_rows": 192000,
+    "all_selected_statistics_recomputed": true,
+    "prior_560_results_unchanged": true,
+    "release_assets_verified": 35,
+    "release_members_hashed": 1443,
+    "training_batch_windows_recomputed": 46080000,
+    "validation_rows_verified": 1152000,
+    "saved_prediction_rows_rescored": 12582912
+  },
+  "final_prediction_audit": "../results/million/final-2026-10-15/prediction-audit.json",
+  "million_resource_accounting": "million-resource-accounting.json",
+  "portable_selected_models": {
+    "receipt": "portable-model-check.json",
+    "models_loaded_strictly": 96,
+    "all_numeric_tensors_finite": true,
+    "parameter_counts_match": true
+  }
 }

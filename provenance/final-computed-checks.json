@@ -1,0 +1,13 @@
+{
+  "fits": 576,
+  "complete_recipes": 192,
+  "selected_models": 96,
+  "selected_curve_rows": 192000,
+  "all_selected_statistics_recomputed": true,
+  "prior_560_results_unchanged": true,
+  "release_assets_verified": 35,
+  "release_members_hashed": 1443,
+  "training_batch_windows_recomputed": 46080000,
+  "validation_rows_verified": 1152000,
+  "saved_prediction_rows_rescored": 12582912
+}

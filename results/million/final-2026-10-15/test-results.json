@@ -1,0 +1,1543 @@
+{
+  "selection_sha256": "9fc3e171655c21a1a2cfd0aca087d5579f72dac53c6252b2c3a361a8022e52e7",
+  "original_results_sha256": "a02c321346c76f4c4859ffe7e68e37c61e573aace34b97677017c3a031c90435",
+  "sealed_test_sha256": "a0d7c32ec3851ee45a68c8919d62fa8a7760a539f31166e9b0607e16a39a900e",
+  "metrics": [
+    {
+      "case_id": "bits-hyper_g12_f3-wd0-lr0-s101",
+      "best_samples": 9835000,
+      "test_within": {
+        "accuracy": 0.99774169921875,
+        "count": 65536,
+        "loss": 0.00687657855451107
+      },
+      "test_outside": {
+        "accuracy": 0.994049072265625,
+        "count": 65536,
+        "loss": 0.017780238762497902
+      },
+      "checkpoint_archive_sha256": "0e6b3faa7ad779280c3df577bbac2a2b7f8a5a84c320b0d9edf4c8edb430a412",
+      "predictions_sha256": "b641f7971515039c8e3093ec2cbfe70c1fbe60bccad01d78efd79fc31d4d9786"
+    },
+    {
+      "case_id": "bits-hyper_g12_f3-wd0-lr0-s202",
+      "best_samples": 1970000,
+      "test_within": {
+        "accuracy": 0.1444244384765625,
+        "count": 65536,
+        "loss": 1.9462249279022217
+      },
+      "test_outside": {
+        "accuracy": 0.1424713134765625,
+        "count": 65536,
+        "loss": 1.946266770362854
+      },
+      "checkpoint_archive_sha256": "14c37f74d0f690e7d4415f7e132a9c5e7b78f7761ce26444a84d1c525f1df32a",
+      "predictions_sha256": "7696ae5b3b25f0c919217648d16fc39363a561a8bd9a919a77aa703af2a86e74"
+    },
+    {
+      "case_id": "bits-hyper_g12_f3-wd0-lr0-s303",
+      "best_samples": 2655000,
+      "test_within": {
+        "accuracy": 0.1420440673828125,
+        "count": 65536,
+        "loss": 1.9460302591323853
+      },
+      "test_outside": {
+        "accuracy": 0.1423187255859375,
+        "count": 65536,
+        "loss": 1.9462019205093384
+      },
+      "checkpoint_archive_sha256": "a33110b2e1b81aefd49a82999087812131af5b4d8ad5153b8b00de0dcf211678",
+      "predictions_sha256": "691963becc706ac5fbc6abc4e65d2da3d759da5ec719094b482c8598965c1bd8"
+    },
+    {
+      "case_id": "bits-hyper_g2_f3-wd1-lr0-s101",
+      "best_samples": 9915000,
+      "test_within": {
+        "accuracy": 0.9991455078125,
+        "count": 65536,
+        "loss": 0.003637684043496847
+      },
+      "test_outside": {
+        "accuracy": 0.399139404296875,
+        "count": 65536,
+        "loss": 17.344379425048828
+      },
+      "checkpoint_archive_sha256": "be8b8410918eb581cde971a7f372a08cf1d7d261dbf5059bb3bd533aef3e31a0",
+      "predictions_sha256": "9b87e47c26d2f1f2ad78d2f37c77e042ae5584b9b14a7babbd5fcaea94330e64"
+    },
+    {
+      "case_id": "bits-hyper_g2_f3-wd1-lr0-s202",
+      "best_samples": 9935000,
+      "test_within": {
+        "accuracy": 0.9970703125,
+        "count": 65536,
+        "loss": 0.009574072435498238
+      },
+      "test_outside": {
+        "accuracy": 0.909210205078125,
+        "count": 65536,
+        "loss": 0.9118503928184509
+      },
+      "checkpoint_archive_sha256": "388d4d7025a7c33ea13d5b9931997f3faedf5d66b4f468188f1b86b24c4571d4",
+      "predictions_sha256": "ba535339b7770802b2ae7f3b82ee9311d68086798babc7de6712227457139b9d"
+    },
+    {
+      "case_id": "bits-hyper_g2_f3-wd1-lr0-s303",
+      "best_samples": 9660000,
+      "test_within": {
+        "accuracy": 0.9998931884765625,
+        "count": 65536,
+        "loss": 0.0007147290743887424
+      },
+      "test_outside": {
+        "accuracy": 0.965301513671875,
+        "count": 65536,
+        "loss": 0.18124280869960785
+      },
+      "checkpoint_archive_sha256": "832e531bf8b01a82c43a675069f2e70bda016d531c88b68fea05d6fffa11d5e5",
+      "predictions_sha256": "1651ecbf93b4568df00c10c240301afeb8391e4ac31d12dcfa463149d6f8dcc3"
+    },
+    {
+      "case_id": "bits-hyper_g8_f1-wd2-lr0-s101",
+      "best_samples": 5010000,
+      "test_within": {
+        "accuracy": 0.142059326171875,
+        "count": 65536,
+        "loss": 1.9463857412338257
+      },
+      "test_outside": {
+        "accuracy": 0.1412353515625,
+        "count": 65536,
+        "loss": 1.9467520713806152
+      },
+      "checkpoint_archive_sha256": "1c2cf546cd04ef0a888576f5da28cff89a5efe3ba834c58aba69e1a2414fa3d2",
+      "predictions_sha256": "93bea5376d53e45ada975f49205ee6fac70435c11a369a721d86717fdec54965"
+    },
+    {
+      "case_id": "bits-hyper_g8_f1-wd2-lr0-s202",
+      "best_samples": 4840000,
+      "test_within": {
+        "accuracy": 0.1426239013671875,
+        "count": 65536,
+        "loss": 1.9466482400894165
+      },
+      "test_outside": {
+        "accuracy": 0.1402740478515625,
+        "count": 65536,
+        "loss": 1.9469009637832642
+      },
+      "checkpoint_archive_sha256": "00991bcfc8275ce15a74612fb035858c4b6f3b609d95be84baa48f1010bcb1ef",
+      "predictions_sha256": "9fedc7d275032244a9b50bfbc68829a58cc682cadc0b23eb6ca773f620598d89"
+    },
+    {
+      "case_id": "bits-hyper_g8_f1-wd2-lr0-s303",
+      "best_samples": 7410000,
+      "test_within": {
+        "accuracy": 0.1427459716796875,
+        "count": 65536,
+        "loss": 1.9463601112365723
+      },
+      "test_outside": {
+        "accuracy": 0.144195556640625,
+        "count": 65536,
+        "loss": 1.9465726613998413
+      },
+      "checkpoint_archive_sha256": "04f5f6399efd0d08648d49aea4e00a484eb4cc52e3d7d6af04984a307559e3c4",
+      "predictions_sha256": "67713b17c3a9c390820e15c78d4e127add2ec969d1893d92a31456e9150490fc"
+    },
+    {
+      "case_id": "bits-hyper_g8_f3-wd0-lr1-s101",
+      "best_samples": 9200000,
+      "test_within": {
+        "accuracy": 0.141510009765625,
+        "count": 65536,
+        "loss": 1.9461572170257568
+      },
+      "test_outside": {
+        "accuracy": 0.142120361328125,
+        "count": 65536,
+        "loss": 1.946365237236023
+      },
+      "checkpoint_archive_sha256": "567f65860bb566d9c841f16a60b4ba0ae6ffa16549cd24130586ad0d8711cddc",
+      "predictions_sha256": "518556c2c4a3efa3dbf23fff6615739ac82bb837a1b1dbc6aab7a04bf9d149a8"
+    },
+    {
+      "case_id": "bits-hyper_g8_f3-wd0-lr1-s202",
+      "best_samples": 9230000,
+      "test_within": {
+        "accuracy": 0.54205322265625,
+        "count": 65536,
+        "loss": 1.0530400276184082
+      },
+      "test_outside": {
+        "accuracy": 0.1624603271484375,
+        "count": 65536,
+        "loss": 409.1715393066406
+      },
+      "checkpoint_archive_sha256": "971c4c1efea57f3f31c8705087f0e57d560880bcc7cc4d882a89e850c353a692",
+      "predictions_sha256": "daba96b0ad24a12773a834830851ee90e16e7e1e850d9971efc1baec77afe918"
+    },
+    {
+      "case_id": "bits-hyper_g8_f3-wd0-lr1-s303",
+      "best_samples": 3010000,
+      "test_within": {
+        "accuracy": 0.142822265625,
+        "count": 65536,
+        "loss": 1.9463435411453247
+      },
+      "test_outside": {
+        "accuracy": 0.140869140625,
+        "count": 65536,
+        "loss": 1.9465281963348389
+      },
+      "checkpoint_archive_sha256": "e5c4c98efc96d9b8559f7fe865c5a2bd4076bed342483097fb4eabbf6d1e095d",
+      "predictions_sha256": "a27f719e636aaa24e3a650b5dbcaf8323985dbc0ef7a415d9a2aa949b6929775"
+    },
+    {
+      "case_id": "bits-hyper_g8_f5-wd0-lr1-s101",
+      "best_samples": 8335000,
+      "test_within": {
+        "accuracy": 0.9954376220703125,
+        "count": 65536,
+        "loss": 0.013662156648933887
+      },
+      "test_outside": {
+        "accuracy": 0.987396240234375,
+        "count": 65536,
+        "loss": 0.034785814583301544
+      },
+      "checkpoint_archive_sha256": "3e7b149eaced214ba1e860a80771c6786cb0afc01523048ab76351a0d35333d2",
+      "predictions_sha256": "fadb0abae91ae956502792c1cd1eceb12c2805f16fc6bf4f89448a7118fd4497"
+    },
+    {
+      "case_id": "bits-hyper_g8_f5-wd0-lr1-s202",
+      "best_samples": 9975000,
+      "test_within": {
+        "accuracy": 0.9411773681640625,
+        "count": 65536,
+        "loss": 0.17891177535057068
+      },
+      "test_outside": {
+        "accuracy": 0.9171600341796875,
+        "count": 65536,
+        "loss": 0.23783351480960846
+      },
+      "checkpoint_archive_sha256": "25228bc93e1bb4ba94c14d8d2df62aa963cfff713a7a520ee69ae587c3dd3ac2",
+      "predictions_sha256": "a766e0b70d34e09da95d90dc3a3b93f23ccda8eba64b5d141f987db8191c6ae3"
+    },
+    {
+      "case_id": "bits-hyper_g8_f5-wd0-lr1-s303",
+      "best_samples": 9975000,
+      "test_within": {
+        "accuracy": 0.9946746826171875,
+        "count": 65536,
+        "loss": 0.023617981001734734
+      },
+      "test_outside": {
+        "accuracy": 0.9986724853515625,
+        "count": 65536,
+        "loss": 0.0085081672295928
+      },
+      "checkpoint_archive_sha256": "7b4d76bf98946f4d3712853befbcb2fcf37a0451ccf2f192dbae5151b2a08797",
+      "predictions_sha256": "5628841d0bd3beec977e848093049dc872a0979b70df33bcc7f38144dc72e513"
+    },
+    {
+      "case_id": "bits-mlp20-wd0-lr1-s101",
+      "best_samples": 2970000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.9461369514465332
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.946302890777588
+      },
+      "checkpoint_archive_sha256": "e0bfe4e7eaacf7dded6ccce6cc78a0a76738dfad28ae5ebea829ec545c9c18dd",
+      "predictions_sha256": "2e3907561b6944f32c862748b3cfdbabf9e7fa9459fc71f7630427a779a4e692"
+    },
+    {
+      "case_id": "bits-mlp20-wd0-lr1-s202",
+      "best_samples": 7150000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.9461615085601807
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.9463539123535156
+      },
+      "checkpoint_archive_sha256": "879d01598c897329493dc428c7b46f16407e150b63831a959f19003d5fbf5feb",
+      "predictions_sha256": "dbc76d041ef1871d73deb0700dda580fb451a8a4f7b89bbad4514689e541a5ed"
+    },
+    {
+      "case_id": "bits-mlp20-wd0-lr1-s303",
+      "best_samples": 3335000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.9462538957595825
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.9464428424835205
+      },
+      "checkpoint_archive_sha256": "ca8b3e4a6c6b10b65ba2fa94e2b6e5c589f1322ba632b3006f9c2626f4cf93ce",
+      "predictions_sha256": "223cc82d79dfaa8edab73e9ea63bc1bbb12d1bdfea4ca0b29574e10b7395a638"
+    },
+    {
+      "case_id": "bits-mlp3-wd2-lr1-s101",
+      "best_samples": 6515000,
+      "test_within": {
+        "accuracy": 0.1454010009765625,
+        "count": 65536,
+        "loss": 1.946227788925171
+      },
+      "test_outside": {
+        "accuracy": 0.1411895751953125,
+        "count": 65536,
+        "loss": 1.946690559387207
+      },
+      "checkpoint_archive_sha256": "fd92f624058c77d233a32d11fd849be465fde80d0d7db5339946edc1b68f4013",
+      "predictions_sha256": "364b4f640c867a81dfe0136c9a0abd3b93dfabee794834f4d95734f2e6fa0651"
+    },
+    {
+      "case_id": "bits-mlp3-wd2-lr1-s202",
+      "best_samples": 2360000,
+      "test_within": {
+        "accuracy": 0.1442108154296875,
+        "count": 65536,
+        "loss": 1.9469387531280518
+      },
+      "test_outside": {
+        "accuracy": 0.142333984375,
+        "count": 65536,
+        "loss": 1.9468812942504883
+      },
+      "checkpoint_archive_sha256": "5d8f5832b54d0f4e408e9de1263ecf7944985dc5eed705cacdec784cf16b867b",
+      "predictions_sha256": "56c6d61b24a14b529b131d97cdb82da087ced609c116dc63aa0fe741b7802b8c"
+    },
+    {
+      "case_id": "bits-mlp3-wd2-lr1-s303",
+      "best_samples": 3540000,
+      "test_within": {
+        "accuracy": 0.1428070068359375,
+        "count": 65536,
+        "loss": 1.9472448825836182
+      },
+      "test_outside": {
+        "accuracy": 0.1455535888671875,
+        "count": 65536,
+        "loss": 1.947402834892273
+      },
+      "checkpoint_archive_sha256": "d2440dd7fd6f47043fdbd4705c45d73fa56f2fa8c6884b0c441b47f259636d05",
+      "predictions_sha256": "caa6bc59fed4cac7ac992953217a164c02bc0cff9ebd3e6905c746d5585d786e"
+    },
+    {
+      "case_id": "bits-mlp50-wd2-lr1-s101",
+      "best_samples": 2970000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.946143627166748
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.9463108777999878
+      },
+      "checkpoint_archive_sha256": "c9b270755043c14f504399212d0567c592168f51418604ca76fc06d3f6f895d0",
+      "predictions_sha256": "55dfd744a69fc1cb60eeb668856db39f315727234604d550972663decf766f61"
+    },
+    {
+      "case_id": "bits-mlp50-wd2-lr1-s202",
+      "best_samples": 7150000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.946163296699524
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.9463591575622559
+      },
+      "checkpoint_archive_sha256": "9e0c79eab692cd1a880ef82d29517e65fb3eb058b0890d21465fdc7ab2cd32ae",
+      "predictions_sha256": "cbe8c5181c1d512e158131260e2ac496e06614f5f1e77298a9a7ed502ace7754"
+    },
+    {
+      "case_id": "bits-mlp50-wd2-lr1-s303",
+      "best_samples": 5265000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.946149468421936
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.9463671445846558
+      },
+      "checkpoint_archive_sha256": "8d6fec81fa0583b7234f5745291170a6f78cbe39b76b36cd53909e6ccf9a74d6",
+      "predictions_sha256": "9e909642a169a9b3f9ecf30259376863500576fc19ef34ecb93e5a440826e183"
+    },
+    {
+      "case_id": "bits-relational12-wd0-lr0-s101",
+      "best_samples": 6700000,
+      "test_within": {
+        "accuracy": 0.1434173583984375,
+        "count": 65536,
+        "loss": 1.9462213516235352
+      },
+      "test_outside": {
+        "accuracy": 0.1421051025390625,
+        "count": 65536,
+        "loss": 1.9464586973190308
+      },
+      "checkpoint_archive_sha256": "3c59985df11d95a4fb68efbcc304d3d8c46e0beaba0f0a6d104e305e29fb7c16",
+      "predictions_sha256": "9cda9f4a9b53d0a1cb7152f4d9cdefd4833bb74f7274ea9f848b9ad551c6c23c"
+    },
+    {
+      "case_id": "bits-relational12-wd0-lr0-s202",
+      "best_samples": 1520000,
+      "test_within": {
+        "accuracy": 0.14337158203125,
+        "count": 65536,
+        "loss": 1.9460859298706055
+      },
+      "test_outside": {
+        "accuracy": 0.1421051025390625,
+        "count": 65536,
+        "loss": 1.9461172819137573
+      },
+      "checkpoint_archive_sha256": "a32b2d4619d2e51c2cb9ea382cb46c3c3141ca719a4b153760174ec294e121bd",
+      "predictions_sha256": "5a3f9b9732f04bfc7a3deaafa1c0433509676390e46b3b5708a2dae73c68d7a6"
+    },
+    {
+      "case_id": "bits-relational12-wd0-lr0-s303",
+      "best_samples": 1065000,
+      "test_within": {
+        "accuracy": 0.1443328857421875,
+        "count": 65536,
+        "loss": 1.946088194847107
+      },
+      "test_outside": {
+        "accuracy": 0.14422607421875,
+        "count": 65536,
+        "loss": 1.9462801218032837
+      },
+      "checkpoint_archive_sha256": "4dd108ea9d32ed4fc26c6956e0614f73e97f03e9da559d878ee5414bbdf6d06a",
+      "predictions_sha256": "70b2e762a00c9e1f73e5abee35a10aa78e6b3627b01b21d1357e3bdb98eac445"
+    },
+    {
+      "case_id": "bits-relational2-wd0-lr0-s101",
+      "best_samples": 6695000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.9464384317398071
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.9467079639434814
+      },
+      "checkpoint_archive_sha256": "ab58f506030b07033a7362a9f95b87c2a1af87015499625b1015897856b39b61",
+      "predictions_sha256": "e2ee0e5cfcaf3619d29ec297e16d98cbf296701a07e18956783ac5692192d11b"
+    },
+    {
+      "case_id": "bits-relational2-wd0-lr0-s202",
+      "best_samples": 5680000,
+      "test_within": {
+        "accuracy": 0.14288330078125,
+        "count": 65536,
+        "loss": 1.946415662765503
+      },
+      "test_outside": {
+        "accuracy": 0.141845703125,
+        "count": 65536,
+        "loss": 1.9465376138687134
+      },
+      "checkpoint_archive_sha256": "508dcefbb2087514d574648928f56a65c80144be3c5be6ed25ef4587b7ce1e2f",
+      "predictions_sha256": "748c50da5c7bb51f6eb579dfa808ec8ae23749cff7e298fe1d23a663cb73f093"
+    },
+    {
+      "case_id": "bits-relational2-wd0-lr0-s303",
+      "best_samples": 6585000,
+      "test_within": {
+        "accuracy": 0.1432342529296875,
+        "count": 65536,
+        "loss": 1.9461629390716553
+      },
+      "test_outside": {
+        "accuracy": 0.1407012939453125,
+        "count": 65536,
+        "loss": 1.9462538957595825
+      },
+      "checkpoint_archive_sha256": "3fc5810054b1f67a6e23aedc5de7f24a39675b5737023f46670e3beb68d7957d",
+      "predictions_sha256": "050dc2c32ee52ae7fc593afb6aa3366f03713afa5fb53f494361cc6753f979e1"
+    },
+    {
+      "case_id": "bits-relational8-wd0-lr0-s101",
+      "best_samples": 6695000,
+      "test_within": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.946264624595642
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.9464850425720215
+      },
+      "checkpoint_archive_sha256": "0716cf3c29b3b941e8a4b19502072da431eff22555865f1fde5240054f1d30c7",
+      "predictions_sha256": "de6be75efe3e1d889fc96daf47ed3dea2d7ebe7adb43f0ae7bbc7e8017bd456a"
+    },
+    {
+      "case_id": "bits-relational8-wd0-lr0-s202",
+      "best_samples": 1520000,
+      "test_within": {
+        "accuracy": 0.1422576904296875,
+        "count": 65536,
+        "loss": 1.9461785554885864
+      },
+      "test_outside": {
+        "accuracy": 0.14263916015625,
+        "count": 65536,
+        "loss": 1.9461828470230103
+      },
+      "checkpoint_archive_sha256": "c4c9975d9fa17764efce05a6ffd0b8049191a482cc2f132239b26b251876308d",
+      "predictions_sha256": "3cd669d69a8af45dcaed7c8106bd0bc178b861b069aa4278d9d6f3f488447c9a"
+    },
+    {
+      "case_id": "bits-relational8-wd0-lr0-s303",
+      "best_samples": 6585000,
+      "test_within": {
+        "accuracy": 0.142669677734375,
+        "count": 65536,
+        "loss": 1.9461112022399902
+      },
+      "test_outside": {
+        "accuracy": 0.142242431640625,
+        "count": 65536,
+        "loss": 1.9462084770202637
+      },
+      "checkpoint_archive_sha256": "ee9975e0e4ac75b737c81679ac3e31b391ba77ad06f1aa4755e719f8179dba48",
+      "predictions_sha256": "75db65244bccb2fcd4710c3d4f32c883f8eb8c2cf15b37a7c102b4bcb55152e9"
+    },
+    {
+      "case_id": "bits-resmlp20-wd0-lr1-s101",
+      "best_samples": 2440000,
+      "test_within": {
+        "accuracy": 0.14056396484375,
+        "count": 65536,
+        "loss": 1.946329951286316
+      },
+      "test_outside": {
+        "accuracy": 0.140716552734375,
+        "count": 65536,
+        "loss": 1.9468690156936646
+      },
+      "checkpoint_archive_sha256": "4b10d0a95dd6e3bf85416528a8a82f1003a0f647fabcb795502eac3a8da38fe8",
+      "predictions_sha256": "9998fe420a98de325010ce7227572bb5b45a69a481282c15617db6383377c728"
+    },
+    {
+      "case_id": "bits-resmlp20-wd0-lr1-s202",
+      "best_samples": 395000,
+      "test_within": {
+        "accuracy": 0.1416168212890625,
+        "count": 65536,
+        "loss": 1.9462226629257202
+      },
+      "test_outside": {
+        "accuracy": 0.1441802978515625,
+        "count": 65536,
+        "loss": 1.9463005065917969
+      },
+      "checkpoint_archive_sha256": "4a3c456b70a3a2cb2c2410565dc37fd3cf0e4948a1c801cf64cc6e3ae84fce83",
+      "predictions_sha256": "eb83884513f4062dd1c8b43aaec99cd773c21c3f25158b09769aa7fc8b0aaa33"
+    },
+    {
+      "case_id": "bits-resmlp20-wd0-lr1-s303",
+      "best_samples": 9160000,
+      "test_within": {
+        "accuracy": 0.9998626708984375,
+        "count": 65536,
+        "loss": 0.00030912255169823766
+      },
+      "test_outside": {
+        "accuracy": 0.999603271484375,
+        "count": 65536,
+        "loss": 0.004232004750519991
+      },
+      "checkpoint_archive_sha256": "dcd6a3347b7d3a5cd658ea14970eab7a460a5564f7bcb186c9f30830d7693985",
+      "predictions_sha256": "be84a909b5e0ba03a675c2ff3157d320dfd7142c2464b7a8e5e1caf3de480904"
+    },
+    {
+      "case_id": "bits-resmlp50-wd0-lr1-s101",
+      "best_samples": 9375000,
+      "test_within": {
+        "accuracy": 0.9998779296875,
+        "count": 65536,
+        "loss": 0.0004904834786430001
+      },
+      "test_outside": {
+        "accuracy": 0.999969482421875,
+        "count": 65536,
+        "loss": 0.00014562632713932544
+      },
+      "checkpoint_archive_sha256": "7071d3d686ee950e77e81183d0d804cb0cee64fb839b519667daa5a0e76292ac",
+      "predictions_sha256": "091627960a794b03e0ff01dad32695a19e5664d4a64da87d2174d427486e1efa"
+    },
+    {
+      "case_id": "bits-resmlp50-wd0-lr1-s202",
+      "best_samples": 7680000,
+      "test_within": {
+        "accuracy": 0.143218994140625,
+        "count": 65536,
+        "loss": 1.9462857246398926
+      },
+      "test_outside": {
+        "accuracy": 0.1420440673828125,
+        "count": 65536,
+        "loss": 1.9465728998184204
+      },
+      "checkpoint_archive_sha256": "cb4f09c5f8b1a2b6046b13c7c2602ebb48603a4ca4cd8b4c0c10109257f5b66a",
+      "predictions_sha256": "f2a8382e4fcf99a33cf58b22177e3391a59d16ca364e87c11357646ec36efc80"
+    },
+    {
+      "case_id": "bits-resmlp50-wd0-lr1-s303",
+      "best_samples": 170000,
+      "test_within": {
+        "accuracy": 0.1402587890625,
+        "count": 65536,
+        "loss": 1.9465880393981934
+      },
+      "test_outside": {
+        "accuracy": 0.1420440673828125,
+        "count": 65536,
+        "loss": 1.9465842247009277
+      },
+      "checkpoint_archive_sha256": "f947eb9d0812da2036ccb798353e548581d9126d6d592e83d864ed22b3271298",
+      "predictions_sha256": "c120dad3e785f92306adc596bfa8c230af199b2bf85af0ed3d66070612fd223f"
+    },
+    {
+      "case_id": "bits-transformer12-wd0-lr0-s101",
+      "best_samples": 6695000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.9462549686431885
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.9464111328125
+      },
+      "checkpoint_archive_sha256": "a01785cea2c5d6ad1e7040ab0aaa58625b6fd971bb63d0feba82a2f4b158d116",
+      "predictions_sha256": "5b52c9538949cb2943d54dd63957170741b21f17b82610037de33550cfaa2755"
+    },
+    {
+      "case_id": "bits-transformer12-wd0-lr0-s202",
+      "best_samples": 7150000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.9462151527404785
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.9463733434677124
+      },
+      "checkpoint_archive_sha256": "4f0b551ec869b7d827974c205f776d3409f60dbdef2fafe376e61221f8467cb7",
+      "predictions_sha256": "fbf181d7c17bc5ac22188dcaeecb4331c97f86af0e8027d8992ba87ae1be9e4a"
+    },
+    {
+      "case_id": "bits-transformer12-wd0-lr0-s303",
+      "best_samples": 8330000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.9460790157318115
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.946271300315857
+      },
+      "checkpoint_archive_sha256": "b15e533e6173668faa944a0f66d5d098d32fce3be9a346100ca2eb71aa30116a",
+      "predictions_sha256": "c8437b3d4b377ab0436563848e69400c769f438e9d7b9668d78727022489cc3e"
+    },
+    {
+      "case_id": "bits-transformer2-wd0-lr0-s101",
+      "best_samples": 2040000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.9461076259613037
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.9462575912475586
+      },
+      "checkpoint_archive_sha256": "28bf39aa287a3a8b80ce3de417e3bdd798f86c5013bfe38b8e8f0cb119d4a4f1",
+      "predictions_sha256": "32b3c5594658f0ec7da9d155800394ecb1383c1d7680188f7b459f738148c64d"
+    },
+    {
+      "case_id": "bits-transformer2-wd0-lr0-s202",
+      "best_samples": 7150000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.946297526359558
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.9465059041976929
+      },
+      "checkpoint_archive_sha256": "81ce50cd7256fd9e3b5c9d40ff109db14b5a0b6c12944061fa20b282418a5cf1",
+      "predictions_sha256": "fc242cb8b80f40704f0eda8b2a3bd1ce0a44c96c23c8db2d8bce96d6568aea94"
+    },
+    {
+      "case_id": "bits-transformer2-wd0-lr0-s303",
+      "best_samples": 8295000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.9461852312088013
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.9463270902633667
+      },
+      "checkpoint_archive_sha256": "618af6f5f5824fb610a2e21a87065c50456d4def6e3fa571721ff2a6fa37af51",
+      "predictions_sha256": "c17ee4a96d96ba59a1468a3f809e5d8e02093e64e9f1b8a7f657874a3c8c9002"
+    },
+    {
+      "case_id": "bits-transformer8-wd0-lr0-s101",
+      "best_samples": 6695000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.9462509155273438
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.9463974237442017
+      },
+      "checkpoint_archive_sha256": "380df0062e4e37d5e3a622a084fa5d8d84f41a6724f00945d23692d7e56af1f6",
+      "predictions_sha256": "520b677126ab54bb0f562e845270df54849f7c6ba35097d796596831d308f2b6"
+    },
+    {
+      "case_id": "bits-transformer8-wd0-lr0-s202",
+      "best_samples": 7150000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.9461089372634888
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.9462969303131104
+      },
+      "checkpoint_archive_sha256": "f30019f98fb973983a56009e7f21ace40c389cf7c61e31b047c4d40db7c8416e",
+      "predictions_sha256": "60260ead4ec0841a4a545c157afa068c7160c22be1ada496daa4cca3fdd8df50"
+    },
+    {
+      "case_id": "bits-transformer8-wd0-lr0-s303",
+      "best_samples": 8295000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.9462440013885498
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.9463809728622437
+      },
+      "checkpoint_archive_sha256": "fa3f8ec35b0401d440fe20b1250084da256b317376aa68142d0a052ed2caad41",
+      "predictions_sha256": "de8eabd4bc079e5241409c6b0fa1947f6ca3fcb38d7be62e58d812e057fecd72"
+    },
+    {
+      "case_id": "scalar-hyper_g12_f3-wd0-lr0-s101",
+      "best_samples": 560000,
+      "test_within": {
+        "accuracy": 0.1433258056640625,
+        "count": 65536,
+        "loss": 1.9461182355880737
+      },
+      "test_outside": {
+        "accuracy": 0.14312744140625,
+        "count": 65536,
+        "loss": 1.946635127067566
+      },
+      "checkpoint_archive_sha256": "8cf8d7f318b933c42e2c921f735f5e328de0e3648fabbef96a25a11f77451844",
+      "predictions_sha256": "26c86d213040a4cfb07b7d29de9bc2573e36a79a83163a04b6e1a1dcf0b0b88f"
+    },
+    {
+      "case_id": "scalar-hyper_g12_f3-wd0-lr0-s202",
+      "best_samples": 165000,
+      "test_within": {
+        "accuracy": 0.1436614990234375,
+        "count": 65536,
+        "loss": 1.9461774826049805
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.9460989236831665
+      },
+      "checkpoint_archive_sha256": "9933c40fa10331cd506cd4398fa86603b09233a7af3299395ac322cd1abf65f5",
+      "predictions_sha256": "5797b1b2f039f6c22ed0a08caf963c2462e160eacb59666d8058f134919dce71"
+    },
+    {
+      "case_id": "scalar-hyper_g12_f3-wd0-lr0-s303",
+      "best_samples": 125000,
+      "test_within": {
+        "accuracy": 0.14306640625,
+        "count": 65536,
+        "loss": 1.9461307525634766
+      },
+      "test_outside": {
+        "accuracy": 0.1422576904296875,
+        "count": 65536,
+        "loss": 1.946406364440918
+      },
+      "checkpoint_archive_sha256": "ae5d2cda09175a089a90a1619c2ff06d75aa362de19241536a6d07864ae61a7c",
+      "predictions_sha256": "28666e37925afd63ea7306af5c18f8c9ee15845adbcf93341ad744d1a73847b4"
+    },
+    {
+      "case_id": "scalar-hyper_g2_f3-wd0-lr1-s101",
+      "best_samples": 8425000,
+      "test_within": {
+        "accuracy": 0.142791748046875,
+        "count": 65536,
+        "loss": 1.9463564157485962
+      },
+      "test_outside": {
+        "accuracy": 0.142120361328125,
+        "count": 65536,
+        "loss": 1.950510025024414
+      },
+      "checkpoint_archive_sha256": "8c9b31fdfd3056c307dfafcff415f194e25c4a06ef913a2b948de7d00d76fc09",
+      "predictions_sha256": "5a128303993e7d64f32878423af184797811923645d3213ab11ef5f017e87281"
+    },
+    {
+      "case_id": "scalar-hyper_g2_f3-wd0-lr1-s202",
+      "best_samples": 3340000,
+      "test_within": {
+        "accuracy": 0.144195556640625,
+        "count": 65536,
+        "loss": 1.9466902017593384
+      },
+      "test_outside": {
+        "accuracy": 0.1433868408203125,
+        "count": 65536,
+        "loss": 2.0854077339172363
+      },
+      "checkpoint_archive_sha256": "f685c30be278ed8c6e09b893df7b57ef1de541de7bf407a0d12f45f4fda41b44",
+      "predictions_sha256": "93859ea7b1b634b78776293f1b79deb49b2457094efeacacbda157b84b7f0351"
+    },
+    {
+      "case_id": "scalar-hyper_g2_f3-wd0-lr1-s303",
+      "best_samples": 8450000,
+      "test_within": {
+        "accuracy": 0.1432037353515625,
+        "count": 65536,
+        "loss": 1.9463194608688354
+      },
+      "test_outside": {
+        "accuracy": 0.1443939208984375,
+        "count": 65536,
+        "loss": 2.1551625728607178
+      },
+      "checkpoint_archive_sha256": "1eb56b607bac9cb9867bb149590b5ba223081650ef4e65e86181a5d84baa0f2c",
+      "predictions_sha256": "4250e5733a605e7da83c2002577088592ecebd2d4d7247369e770d160b7b77d2"
+    },
+    {
+      "case_id": "scalar-hyper_g8_f1-wd1-lr1-s101",
+      "best_samples": 5580000,
+      "test_within": {
+        "accuracy": 0.141815185546875,
+        "count": 65536,
+        "loss": 1.946374773979187
+      },
+      "test_outside": {
+        "accuracy": 0.144866943359375,
+        "count": 65536,
+        "loss": 1.9469021558761597
+      },
+      "checkpoint_archive_sha256": "7ffbe834dbae9fd8012ffa8c066e53b3bff49cdf22af92447bc47686152ba7a4",
+      "predictions_sha256": "de678712d607bd987276c6b7d9da5d978512764c40be33b79bf5c0d7fbec5449"
+    },
+    {
+      "case_id": "scalar-hyper_g8_f1-wd1-lr1-s202",
+      "best_samples": 7150000,
+      "test_within": {
+        "accuracy": 0.141876220703125,
+        "count": 65536,
+        "loss": 1.9462045431137085
+      },
+      "test_outside": {
+        "accuracy": 0.144866943359375,
+        "count": 65536,
+        "loss": 1.9461724758148193
+      },
+      "checkpoint_archive_sha256": "6c74c3612a5a3ee9d796cf46f6e75c85c69bcd500635a9ca9c816889d0ae031b",
+      "predictions_sha256": "f2a7dce46316e91f2a7f33c5eca736024b8ad8e4b3c80f327f0935ab94d9f7ef"
+    },
+    {
+      "case_id": "scalar-hyper_g8_f1-wd1-lr1-s303",
+      "best_samples": 7500000,
+      "test_within": {
+        "accuracy": 0.1417694091796875,
+        "count": 65536,
+        "loss": 1.9464526176452637
+      },
+      "test_outside": {
+        "accuracy": 0.144866943359375,
+        "count": 65536,
+        "loss": 1.9467909336090088
+      },
+      "checkpoint_archive_sha256": "6ea27ce2e4021da2a81c5d006bfd24113a918c47fbd62107167cf607c1e6ab3b",
+      "predictions_sha256": "c3c48f2ec8333e05dc40dc51d9510ff32731683648526401761ca3518d603f7c"
+    },
+    {
+      "case_id": "scalar-hyper_g8_f3-wd0-lr0-s101",
+      "best_samples": 4430000,
+      "test_within": {
+        "accuracy": 0.1429595947265625,
+        "count": 65536,
+        "loss": 1.945977807044983
+      },
+      "test_outside": {
+        "accuracy": 0.1422576904296875,
+        "count": 65536,
+        "loss": 1.9459563493728638
+      },
+      "checkpoint_archive_sha256": "a858d03942bc4196d9937e2f2d0cf94fee4ec1146b1deb64bc825c7269b3a1de",
+      "predictions_sha256": "4091afc76c3126ebdcf03a1e0641e8878c53d7385aa1bed2b124979d22e6c2fc"
+    },
+    {
+      "case_id": "scalar-hyper_g8_f3-wd0-lr0-s202",
+      "best_samples": 935000,
+      "test_within": {
+        "accuracy": 0.144012451171875,
+        "count": 65536,
+        "loss": 1.9460266828536987
+      },
+      "test_outside": {
+        "accuracy": 0.14239501953125,
+        "count": 65536,
+        "loss": 1.9469636678695679
+      },
+      "checkpoint_archive_sha256": "04ffc18239f285b4a65cd81d0c60534f89e8b81db5b25aa5bfa5407d83075e6d",
+      "predictions_sha256": "24ec0eca3ec681df0f1045b348286e5717d50da3dc7f098ff30bfb38c18344b5"
+    },
+    {
+      "case_id": "scalar-hyper_g8_f3-wd0-lr0-s303",
+      "best_samples": 125000,
+      "test_within": {
+        "accuracy": 0.1438751220703125,
+        "count": 65536,
+        "loss": 1.9463024139404297
+      },
+      "test_outside": {
+        "accuracy": 0.1435089111328125,
+        "count": 65536,
+        "loss": 1.9568336009979248
+      },
+      "checkpoint_archive_sha256": "4fc323d44d823b7aa35b2b646a759afbc9abf571618b98dc1a10a0b8b286cba0",
+      "predictions_sha256": "af4f084fd6a701110b85f777dd6afe9d61c112dd1dba695b3b87d713469b6556"
+    },
+    {
+      "case_id": "scalar-hyper_g8_f5-wd1-lr1-s101",
+      "best_samples": 5580000,
+      "test_within": {
+        "accuracy": 0.1421661376953125,
+        "count": 65536,
+        "loss": 1.9471170902252197
+      },
+      "test_outside": {
+        "accuracy": 0.1424102783203125,
+        "count": 65536,
+        "loss": 1.9477585554122925
+      },
+      "checkpoint_archive_sha256": "05a0c134dbe367b1e420991d688eb1deb8e77d284e2a2cccfc726a4939cd9015",
+      "predictions_sha256": "fcc65522811a684581456ba96af66bd2111bfe6238e2df91ce02948965744866"
+    },
+    {
+      "case_id": "scalar-hyper_g8_f5-wd1-lr1-s202",
+      "best_samples": 7150000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.9461888074874878
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.9463794231414795
+      },
+      "checkpoint_archive_sha256": "c57ba2486b0f445e6e72b79063571683c7b0577ac911fd0bca35dee7e36dea79",
+      "predictions_sha256": "9afd7570331cda14489ac1f689f6abce441a521f7de915a8be1f3e240aabe01b"
+    },
+    {
+      "case_id": "scalar-hyper_g8_f5-wd1-lr1-s303",
+      "best_samples": 20000,
+      "test_within": {
+        "accuracy": 0.143341064453125,
+        "count": 65536,
+        "loss": 1.9465450048446655
+      },
+      "test_outside": {
+        "accuracy": 0.141632080078125,
+        "count": 65536,
+        "loss": 1.9466484785079956
+      },
+      "checkpoint_archive_sha256": "d97a2b0a9a522ee6e7439771820cf10bb11bb8787079e7edce61311db6e13bd2",
+      "predictions_sha256": "5329b7efa4c5264ad3971e40a246680a876c50e2ef61293531f565a19218f2d1"
+    },
+    {
+      "case_id": "scalar-mlp20-wd1-lr1-s101",
+      "best_samples": 2970000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.9461616277694702
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.9463343620300293
+      },
+      "checkpoint_archive_sha256": "d36dcc183d1363936bfacbcdbec613a66373d0c959002729ced0abfedade8e1c",
+      "predictions_sha256": "8635fb3d4a541ae65a61373cdff71c74a89da07ad5c3a18ec53e9c10fab9c0a4"
+    },
+    {
+      "case_id": "scalar-mlp20-wd1-lr1-s202",
+      "best_samples": 7150000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.9461535215377808
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.9463402032852173
+      },
+      "checkpoint_archive_sha256": "3a916edc71b60f683a3ab0687ac4f9a488f8e58af4e0742b69b9c7340a069e44",
+      "predictions_sha256": "f6e4d5401d17d9b01726f647c3e5a01c4e4eb756569584ae4e4ebbb9f1cb1c13"
+    },
+    {
+      "case_id": "scalar-mlp20-wd1-lr1-s303",
+      "best_samples": 5265000,
+      "test_within": {
+        "accuracy": 0.143341064453125,
+        "count": 65536,
+        "loss": 1.9461336135864258
+      },
+      "test_outside": {
+        "accuracy": 0.1422576904296875,
+        "count": 65536,
+        "loss": 1.9463380575180054
+      },
+      "checkpoint_archive_sha256": "9ae5be9cc080170b840425ed7adac70d0b5090563e93abf91a82fedfe61c4b7f",
+      "predictions_sha256": "2d6ba83ad29ba8550b2398356a20f6f286f99e19e75b8856f7265e106a1d136d"
+    },
+    {
+      "case_id": "scalar-mlp3-wd0-lr0-s101",
+      "best_samples": 3635000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.9462119340896606
+      },
+      "test_outside": {
+        "accuracy": 0.1424713134765625,
+        "count": 65536,
+        "loss": 1.9462449550628662
+      },
+      "checkpoint_archive_sha256": "f9cf707710f2e008c0548f09c5ba4eedff72e04a214ed55191edf0f77c2a3e4a",
+      "predictions_sha256": "7c9568d300128b48fef34a2d347969df1830d05fb4c8dd39a57d125fa1a65d64"
+    },
+    {
+      "case_id": "scalar-mlp3-wd0-lr0-s202",
+      "best_samples": 5795000,
+      "test_within": {
+        "accuracy": 0.145233154296875,
+        "count": 65536,
+        "loss": 1.9460904598236084
+      },
+      "test_outside": {
+        "accuracy": 0.14251708984375,
+        "count": 65536,
+        "loss": 1.9464881420135498
+      },
+      "checkpoint_archive_sha256": "7749f022a409d5d533de28ff7a6bcb38cf12ea97eb2c024d466539930a4e7644",
+      "predictions_sha256": "9d16a5bd473b66f627596c75a3e4c5cf15715c9cd0f32781dcf4ba2c2f2c01b2"
+    },
+    {
+      "case_id": "scalar-mlp3-wd0-lr0-s303",
+      "best_samples": 125000,
+      "test_within": {
+        "accuracy": 0.1447601318359375,
+        "count": 65536,
+        "loss": 1.9466166496276855
+      },
+      "test_outside": {
+        "accuracy": 0.144866943359375,
+        "count": 65536,
+        "loss": 1.950519323348999
+      },
+      "checkpoint_archive_sha256": "433705515ac979684d41f4492b0ef91433b1cd973d8cebc5d6000da153b31a4b",
+      "predictions_sha256": "6159d66f18371d34b320573be3d350b880654e0b8002fe52d893b4b79f2a271b"
+    },
+    {
+      "case_id": "scalar-mlp50-wd2-lr1-s101",
+      "best_samples": 2970000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.9461473226547241
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.9463152885437012
+      },
+      "checkpoint_archive_sha256": "e13b6df6912d791397ae5a6a1c33c9fb2b4432cff8bb65a5bc26552ffe1e23a2",
+      "predictions_sha256": "d55e9aeac71eacdc23c78680a030fc975f4f9eb7786bbf55c88c3fb070744cb9"
+    },
+    {
+      "case_id": "scalar-mlp50-wd2-lr1-s202",
+      "best_samples": 7150000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.9461456537246704
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.9463332891464233
+      },
+      "checkpoint_archive_sha256": "aa6177bb1984be0108c2b4264f654b1979cb0242096e3da7f11ca5d04399f16d",
+      "predictions_sha256": "70903995e502eb95257a42fe75a1dbac0ea5b21c1d2728d0b459ed6c142e5c85"
+    },
+    {
+      "case_id": "scalar-mlp50-wd2-lr1-s303",
+      "best_samples": 5265000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.9461554288864136
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.9463824033737183
+      },
+      "checkpoint_archive_sha256": "0a026e088cae3e609501fa044b73432bf9173dd9b50a58117a9b474ea4dc9c87",
+      "predictions_sha256": "b394bd7c5b2dea9807ffdd20c35a33d6bb283fe87234e86fda7bd3557b350bdb"
+    },
+    {
+      "case_id": "scalar-relational12-wd0-lr0-s101",
+      "best_samples": 950000,
+      "test_within": {
+        "accuracy": 0.143951416015625,
+        "count": 65536,
+        "loss": 1.9461592435836792
+      },
+      "test_outside": {
+        "accuracy": 0.144866943359375,
+        "count": 65536,
+        "loss": 1.947096824645996
+      },
+      "checkpoint_archive_sha256": "beb610830e3e2599a4150978f42d687288a5491c5773bc5d29b6806fa87bf46a",
+      "predictions_sha256": "5756930c9e0018674dd83f757d8b484e9f2f0afbba3833b4103d1a85e3814d22"
+    },
+    {
+      "case_id": "scalar-relational12-wd0-lr0-s202",
+      "best_samples": 280000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.9463216066360474
+      },
+      "test_outside": {
+        "accuracy": 0.1452484130859375,
+        "count": 65536,
+        "loss": 1.9467717409133911
+      },
+      "checkpoint_archive_sha256": "10a050f5485bf2d4ae90e7b0602fbe4608587423120b6d48d37a97ac1f7b2296",
+      "predictions_sha256": "a9971b97d63c0d558f1ed470a357a256844d0fa28f2ff3388a0aa19f4376b888"
+    },
+    {
+      "case_id": "scalar-relational12-wd0-lr0-s303",
+      "best_samples": 2655000,
+      "test_within": {
+        "accuracy": 0.1430206298828125,
+        "count": 65536,
+        "loss": 1.9464707374572754
+      },
+      "test_outside": {
+        "accuracy": 0.1435089111328125,
+        "count": 65536,
+        "loss": 1.9472545385360718
+      },
+      "checkpoint_archive_sha256": "eb8c3511043fbdf77834691a0a87ef1e90c1ce9ac292bce7120505c699e3b53d",
+      "predictions_sha256": "84cd59dba4ba2f6951fefca4bffd88b4f58dca387c443d25925614793e7cffa0"
+    },
+    {
+      "case_id": "scalar-relational2-wd2-lr0-s101",
+      "best_samples": 950000,
+      "test_within": {
+        "accuracy": 0.1439971923828125,
+        "count": 65536,
+        "loss": 1.946202278137207
+      },
+      "test_outside": {
+        "accuracy": 0.144866943359375,
+        "count": 65536,
+        "loss": 1.947366714477539
+      },
+      "checkpoint_archive_sha256": "ef0d34a452b67bbe3a8632a598d2c3b72fbca572d914b80ec9d18de358f5164a",
+      "predictions_sha256": "5b819a6fc67221e0110fbc38afb466a8a073e22ba25c0fcbcd3bb3a701547be3"
+    },
+    {
+      "case_id": "scalar-relational2-wd2-lr0-s202",
+      "best_samples": 280000,
+      "test_within": {
+        "accuracy": 0.143646240234375,
+        "count": 65536,
+        "loss": 1.9466265439987183
+      },
+      "test_outside": {
+        "accuracy": 0.144866943359375,
+        "count": 65536,
+        "loss": 1.9478700160980225
+      },
+      "checkpoint_archive_sha256": "6da406080d29edaa68c1374ac0514cefddbbf25085a6c1fe2ec93e4e17655889",
+      "predictions_sha256": "ab89751cf62b5f365583930ff4a0217e04ba4ab04d20423913d14239b3833a1a"
+    },
+    {
+      "case_id": "scalar-relational2-wd2-lr0-s303",
+      "best_samples": 2645000,
+      "test_within": {
+        "accuracy": 0.142974853515625,
+        "count": 65536,
+        "loss": 1.9464428424835205
+      },
+      "test_outside": {
+        "accuracy": 0.1435089111328125,
+        "count": 65536,
+        "loss": 1.9465445280075073
+      },
+      "checkpoint_archive_sha256": "b7eabdbaa9b1b7612f4dbec44ccbb37d52719837a78f690c57c42dbb9c41e728",
+      "predictions_sha256": "8e126b3a1f44e40e0c5e92c77d831b92f31d42df7991828b9f3515af8d67cfb6"
+    },
+    {
+      "case_id": "scalar-relational8-wd0-lr0-s101",
+      "best_samples": 950000,
+      "test_within": {
+        "accuracy": 0.1437225341796875,
+        "count": 65536,
+        "loss": 1.9461559057235718
+      },
+      "test_outside": {
+        "accuracy": 0.144866943359375,
+        "count": 65536,
+        "loss": 1.9470586776733398
+      },
+      "checkpoint_archive_sha256": "8f914b00b31ed00343ccab3157961b9e8fc3bc1dc8b62a88a9563d0d16f19e1a",
+      "predictions_sha256": "246efd45598e939867bc8e264118a5299eddd8f01e92ddbcb1ef3988e8d163b0"
+    },
+    {
+      "case_id": "scalar-relational8-wd0-lr0-s202",
+      "best_samples": 7150000,
+      "test_within": {
+        "accuracy": 0.1430511474609375,
+        "count": 65536,
+        "loss": 1.9461265802383423
+      },
+      "test_outside": {
+        "accuracy": 0.144866943359375,
+        "count": 65536,
+        "loss": 1.9461944103240967
+      },
+      "checkpoint_archive_sha256": "e78c23126c0f855126715d18da5859ba9fd6d5eca7a704757ab6508203977d4c",
+      "predictions_sha256": "b47587c69117a344e576e470e58f604ca480d2ac5258b9f900b79d6cea0a3215"
+    },
+    {
+      "case_id": "scalar-relational8-wd0-lr0-s303",
+      "best_samples": 2655000,
+      "test_within": {
+        "accuracy": 0.1432647705078125,
+        "count": 65536,
+        "loss": 1.9465285539627075
+      },
+      "test_outside": {
+        "accuracy": 0.1435089111328125,
+        "count": 65536,
+        "loss": 1.9472230672836304
+      },
+      "checkpoint_archive_sha256": "db09ba1475d6cbb3aa3b859dc4d5d50a841c43037fd817f71901b840af67f91e",
+      "predictions_sha256": "c683660cd9ce1b6dcd7256af09f00544a95adc0ba8af4249f0a2f3fd25847a55"
+    },
+    {
+      "case_id": "scalar-resmlp20-wd0-lr0-s101",
+      "best_samples": 950000,
+      "test_within": {
+        "accuracy": 0.143463134765625,
+        "count": 65536,
+        "loss": 1.9461323022842407
+      },
+      "test_outside": {
+        "accuracy": 0.1435089111328125,
+        "count": 65536,
+        "loss": 1.9474759101867676
+      },
+      "checkpoint_archive_sha256": "3552a2fbd35b762b5a385fa70213f9e08a67ed3790dc09356e2a1ecaea8de020",
+      "predictions_sha256": "a7a70eddccdb6e75a54f31f5e9bc21910b10cf8e02393fc66b8a0c25652113d5"
+    },
+    {
+      "case_id": "scalar-resmlp20-wd0-lr0-s202",
+      "best_samples": 280000,
+      "test_within": {
+        "accuracy": 0.1431884765625,
+        "count": 65536,
+        "loss": 1.9462361335754395
+      },
+      "test_outside": {
+        "accuracy": 0.144866943359375,
+        "count": 65536,
+        "loss": 1.9482641220092773
+      },
+      "checkpoint_archive_sha256": "250eaf1c849fcaaaac39bb0fd33f28f0a6ea79d4d330a942e46ec634c4779859",
+      "predictions_sha256": "e930f69853d9a9e58a0eca009af4938ad1b74e759de36218515c8cba00005e05"
+    },
+    {
+      "case_id": "scalar-resmlp20-wd0-lr0-s303",
+      "best_samples": 2655000,
+      "test_within": {
+        "accuracy": 0.143280029296875,
+        "count": 65536,
+        "loss": 1.9463815689086914
+      },
+      "test_outside": {
+        "accuracy": 0.1435089111328125,
+        "count": 65536,
+        "loss": 1.9466551542282104
+      },
+      "checkpoint_archive_sha256": "a63b4e2bacab1a5dbdc1e89d77b4f12f829aa78475b1a5bb9a8f53c1bb28dfc3",
+      "predictions_sha256": "822f27986a3adaacd2154cb6b734055e60f5abd4f91ceaa6ffca2da28cb5c0b7"
+    },
+    {
+      "case_id": "scalar-resmlp50-wd0-lr0-s101",
+      "best_samples": 950000,
+      "test_within": {
+        "accuracy": 0.1436004638671875,
+        "count": 65536,
+        "loss": 1.9460867643356323
+      },
+      "test_outside": {
+        "accuracy": 0.1445770263671875,
+        "count": 65536,
+        "loss": 1.9467151165008545
+      },
+      "checkpoint_archive_sha256": "a016b94c3c6439f660fae6260c06e22f2c97febe2f2c3e299283f989ce3e23ed",
+      "predictions_sha256": "93de6f3947942ceeaadd64bc4f58c89ce38adf53dda4b7cc52c5cb49137c1c5a"
+    },
+    {
+      "case_id": "scalar-resmlp50-wd0-lr0-s202",
+      "best_samples": 935000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.9462223052978516
+      },
+      "test_outside": {
+        "accuracy": 0.14501953125,
+        "count": 65536,
+        "loss": 1.9469040632247925
+      },
+      "checkpoint_archive_sha256": "47adc1d9cd9a608710a7148e751f4b9278efcd07de65ce5b50c682e8b8d28600",
+      "predictions_sha256": "3cea94a764d95db064ba7f3c94b71d898ce50451d3673dbd01cc0b97b20aca0a"
+    },
+    {
+      "case_id": "scalar-resmlp50-wd0-lr0-s303",
+      "best_samples": 125000,
+      "test_within": {
+        "accuracy": 0.1435089111328125,
+        "count": 65536,
+        "loss": 1.9463986158370972
+      },
+      "test_outside": {
+        "accuracy": 0.1409759521484375,
+        "count": 65536,
+        "loss": 1.9497419595718384
+      },
+      "checkpoint_archive_sha256": "bd363cb5d098f1610048c1f85ce2f81245cb79185491a66596b7147f913b4db3",
+      "predictions_sha256": "be2724460d6ca33399c0be1d2e7a2d2482a976f55ef7f0107a461b929eff12f5"
+    },
+    {
+      "case_id": "scalar-transformer12-wd0-lr0-s101",
+      "best_samples": 950000,
+      "test_within": {
+        "accuracy": 0.14495849609375,
+        "count": 65536,
+        "loss": 1.9459972381591797
+      },
+      "test_outside": {
+        "accuracy": 0.1427001953125,
+        "count": 65536,
+        "loss": 1.9460954666137695
+      },
+      "checkpoint_archive_sha256": "e67fadf06f070f81fb1a14f0e19e5a1be45d7feca779a145bd823c7b3acccbe6",
+      "predictions_sha256": "6a2fad555b4db7002d9a2b51b640945c4c425f800bfc562365eb1a013c4cf4c3"
+    },
+    {
+      "case_id": "scalar-transformer12-wd0-lr0-s202",
+      "best_samples": 2970000,
+      "test_within": {
+        "accuracy": 0.143341064453125,
+        "count": 65536,
+        "loss": 1.9461313486099243
+      },
+      "test_outside": {
+        "accuracy": 0.1422576904296875,
+        "count": 65536,
+        "loss": 1.9463075399398804
+      },
+      "checkpoint_archive_sha256": "2ba7674124e26737133f1cb51cd8b76ed9329bbe29d73d4cf5b473f5018658ed",
+      "predictions_sha256": "722d650ba073f32d45d154c73d2223d841eef9eb47513021b2cf71ca113da221"
+    },
+    {
+      "case_id": "scalar-transformer12-wd0-lr0-s303",
+      "best_samples": 540000,
+      "test_within": {
+        "accuracy": 0.1431884765625,
+        "count": 65536,
+        "loss": 1.9462209939956665
+      },
+      "test_outside": {
+        "accuracy": 0.1435089111328125,
+        "count": 65536,
+        "loss": 1.9463380575180054
+      },
+      "checkpoint_archive_sha256": "3c45cc74bc247f5e268686fd4424dec68d227884ab80ff1d22378461796d20fe",
+      "predictions_sha256": "e509147f9e4aec53941d1c412f557f98023550a2c39fdaa1e6bdccc1e29f3fa7"
+    },
+    {
+      "case_id": "scalar-transformer2-wd1-lr0-s101",
+      "best_samples": 2040000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.9462085962295532
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.946433186531067
+      },
+      "checkpoint_archive_sha256": "af14fd492d374bfaae7863a81558a5a6c515952acc6489927279504a0be1fbee",
+      "predictions_sha256": "aebabe53ac0b6239f342d22088f521e00e0ef61e5724ada9533f620c916a0780"
+    },
+    {
+      "case_id": "scalar-transformer2-wd1-lr0-s202",
+      "best_samples": 7150000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.9462215900421143
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.9464073181152344
+      },
+      "checkpoint_archive_sha256": "bb9ebfbad549245a6b33eba9a3ed5359013a03f39c26e7b47bfb08339e84a052",
+      "predictions_sha256": "0ea0c0b037c7a01e327908161a082e438a731f41d4f17e6f38f856b2f863bd14"
+    },
+    {
+      "case_id": "scalar-transformer2-wd1-lr0-s303",
+      "best_samples": 540000,
+      "test_within": {
+        "accuracy": 0.1425018310546875,
+        "count": 65536,
+        "loss": 1.9463030099868774
+      },
+      "test_outside": {
+        "accuracy": 0.1422576904296875,
+        "count": 65536,
+        "loss": 1.9465588331222534
+      },
+      "checkpoint_archive_sha256": "62a5d1da4924bc51af40c1c846f046f6129a3a5d9a4d6b8a198a09e2fc07d313",
+      "predictions_sha256": "4ce0c78c094a7675deeb99354f0898a8799e76257940eb30b03e9b2a8a0cb06f"
+    },
+    {
+      "case_id": "scalar-transformer8-wd0-lr0-s101",
+      "best_samples": 2040000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.946202278137207
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.946370005607605
+      },
+      "checkpoint_archive_sha256": "7206263ac44b76bb6da84cfd91067a8c7a36f4d8f6a327f00ec236802161af00",
+      "predictions_sha256": "e112216c6add3669dbd057cd3dd0c6d920848f6033e838d96c00eb7cf5d13e61"
+    },
+    {
+      "case_id": "scalar-transformer8-wd0-lr0-s202",
+      "best_samples": 7150000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.946244478225708
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.946429967880249
+      },
+      "checkpoint_archive_sha256": "394c556e13262b0fa2be91ced9361eefd7c6551680f017c811ee130859b7e078",
+      "predictions_sha256": "3054d4fbca9398b1c99b019372366531011337e6fa2815ea47de24a18fb92e35"
+    },
+    {
+      "case_id": "scalar-transformer8-wd0-lr0-s303",
+      "best_samples": 4885000,
+      "test_within": {
+        "accuracy": 0.1414337158203125,
+        "count": 65536,
+        "loss": 1.9463375806808472
+      },
+      "test_outside": {
+        "accuracy": 0.141387939453125,
+        "count": 65536,
+        "loss": 1.9465733766555786
+      },
+      "checkpoint_archive_sha256": "cc9a22e32f31965b2283c5f5e1d2b8c140ad46b966420910defbbbec51b9b5b6",
+      "predictions_sha256": "06d795fea8603f1292b9a59fe1350c43c86221b5edebf66d5f67ece8d2ec1798"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "allocated_gpu_seconds": 104701,
+  "allocated_gpu_hours": 29.08361111111111,
+  "settled_reservations": 38,
+  "final_test_container_seconds": 123,
+  "scope": "Million-example experiment including canaries, failed attempts, recoveries and final test; allocated main-container GPU time only.",
+  "monetary_billing": "unmeasured",
+  "node_startup_and_idle_overhead": "not included",
+  "owned_workloads_removed": true,
+  "gpu_autoscaler_cleanup_verified": true,
+  "temporary_access_removed": true
+}

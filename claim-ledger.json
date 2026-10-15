@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "status": "dated_local_validation_draft",
+  "status": "completed_experiment_final_report",
   "review_date": "2026-10-15",
   "review_kind": "Codex self-review with recomputation and rendered-page inspection",
   "owner_voice_approval": false,
   "independent_review": false,
-  "uncertainty_policy": "All reported plus/minus values are sampleSD across3optimizationseeds on one fixed dataset. Posthoc threshold counts are descriptive. Incomplete3seedmeans are omitted.",
+  "uncertainty_policy": "All plus/minus values are sample SD across three optimisation seeds on one fixed dataset. Post-hoc thresholds and illustrated architecture choices are descriptive; validation selections were frozen before test access.",
   "artifacts": [
     {
       "id": "source-origins",
@@ -263,13 +263,13 @@
     {
       "id": "protocol",
       "path": "PROTOCOL.md",
-      "sha256": "597da95a66dd421b94d30f9d36d4feb5abef1c83124a6b70400b06fd1fb42f27",
+      "sha256": "096b0d89cdfdf00d17a5f8a1add82132b0dde655ebc7a625cb745154564b09a7",
       "inputs": []
     },
     {
       "id": "manuscript",
       "path": "report/report.tex",
-      "sha256": "f260c9b27c5476a55fcab6f40e0ace717dcfc22f1cd3ff0a35baa1aa50946176",
+      "sha256": "3ac7143e798247aee5217e602107c8b84e5e789178c1ff7979ae5353ba13f5f6",
       "inputs": [
         "summary",
         "manuscript-values",
@@ -280,7 +280,7 @@
     {
       "id": "pdf",
       "path": "report/report.pdf",
-      "sha256": "c3ceee8635d9fbab1a4f68532d9d8c4174f2d1a639d7d63bdba43ceb52bc3d58",
+      "sha256": "30074a269cc6869de936ebb594822f7c9f3172a86f4167a8ab647b27795dda61",
       "inputs": [
         "manuscript",
         "overview-figure",
@@ -293,6 +293,114 @@
       "id": "resource-accounting",
       "path": "provenance/resource-accounting.json",
       "sha256": "5bae6a5872cd6058fc3316b7cec1bb3011d8a94dbec7807325b650233c5bd3fa"
+    },
+    {
+      "id": "final-snapshot",
+      "path": "results/million/final-2026-10-15/snapshot.json",
+      "inputs": [],
+      "sha256": "79bf4fe0faabecbd74b4502def1be03442d3018a47f3d8d069d54cdf62315cde"
+    },
+    {
+      "id": "final-summary",
+      "path": "results/million/final-2026-10-15/summary.json",
+      "inputs": [],
+      "sha256": "40e0602d7f500e5bebbc1b07077832bbac968f0a1b752d188204e9435f6bd3cd"
+    },
+    {
+      "id": "final-selection",
+      "path": "results/million/final-2026-10-15/selection.json",
+      "inputs": [],
+      "sha256": "01a9a28646cd1fabe3a3c1c2dc9c805dc5998bbd91ca349cf699ff63cb37bcbc"
+    },
+    {
+      "id": "final-tests",
+      "path": "results/million/final-2026-10-15/test-results.json",
+      "inputs": [],
+      "sha256": "2d5d658e28586f2f465579cb254ba32f7a5c439acdb84c8da28ba0c7f81347ce"
+    },
+    {
+      "id": "final-history",
+      "path": "results/million/final-2026-10-15/history-audit.json",
+      "inputs": [],
+      "sha256": "65b8272ea774c1a1ab425b0b568f65454e57b7dc007f438d3f325edc8a2a3168"
+    },
+    {
+      "id": "final-prediction-audit",
+      "path": "results/million/final-2026-10-15/prediction-audit.json",
+      "inputs": [],
+      "sha256": "0a600c00966708020c7fe651303d89534d1391542c2bef3ddcb3e6a0cff6f30a"
+    },
+    {
+      "id": "final-curves",
+      "path": "results/million/final-2026-10-15/selected-curves.jsonl.gz",
+      "inputs": [],
+      "sha256": "057a1ab366b63581dafd7787d9eae495f1dffdf507daa575fdcad63cb2f48f90"
+    },
+    {
+      "id": "final-assets",
+      "path": "results/million/final-2026-10-15/release-assets.json",
+      "inputs": [],
+      "sha256": "21c13ec168c7683f5d814674e2fb7314439ece5bd3d60b1f671b1c9462e07dc5"
+    },
+    {
+      "id": "final-computed",
+      "path": "provenance/final-computed-checks.json",
+      "inputs": [],
+      "sha256": "a91def50279e00f5ec58527d3380e15ec6f5b7655348a7b5410eecec99f4b66c"
+    },
+    {
+      "id": "million-resources",
+      "path": "provenance/million-resource-accounting.json",
+      "inputs": [],
+      "sha256": "66f1afd92b12776b03416bbe32810fbf7e84057bec6877d419e1cc108cd70153"
+    },
+    {
+      "id": "final-analysis",
+      "path": "analysis/million_final.py",
+      "inputs": [],
+      "sha256": "ed9616d1d1f6b3bb8b9d0ca7138eabf68c80bb857bee89918bec59760542a754"
+    },
+    {
+      "id": "final-exporter",
+      "path": "analysis/export_million_final.py",
+      "inputs": [],
+      "sha256": "f9cc9ea35745392579b2b70c4ad4516ed7262c24edaa8c239fbb9a58024498c7"
+    },
+    {
+      "id": "final-verifier",
+      "path": "analysis/verify_million_final.py",
+      "inputs": [],
+      "sha256": "0fbe8411ae675810d891bf6ab0ed60f2331a4ed362209eb7cdb1cec9365fb1da"
+    },
+    {
+      "id": "final-test-figure",
+      "path": "report/figures/million-final-test.pdf",
+      "inputs": [],
+      "sha256": "d9f108965aaf9a8d91454413ae79951cb4fd75a053883d2339d2b7231404608e"
+    },
+    {
+      "id": "final-loss-figure",
+      "path": "report/figures/million-selected-loss-curves.pdf",
+      "inputs": [],
+      "sha256": "4b0a7e6521f52884358374b3480e2df226f67d646d4f5cb1c0e7710842aae9d4"
+    },
+    {
+      "id": "final-binary-table",
+      "path": "report/tables/million-final-bits-accuracy.tex",
+      "inputs": [],
+      "sha256": "f600915839804f44529d4862e10e0b1bd23ca27ce765c9866a726037babce368"
+    },
+    {
+      "id": "final-scalar-table",
+      "path": "report/tables/million-final-scalar-accuracy.tex",
+      "inputs": [],
+      "sha256": "222b54793f3361cb9ed7b03b73f66aa0cdc0e8819eb8fdc7b2e8c3d41f859fea"
+    },
+    {
+      "id": "final-statistics",
+      "path": "results/million/final-2026-10-15/selected-statistics.csv",
+      "inputs": [],
+      "sha256": "1cc87cf7b3ec9819eb915a0f4c2c78c287517337d439a501ce2a038c351412d4"
     }
   ],
   "claims": [
@@ -889,36 +997,23 @@
     {
       "id": "snapshot-counts",
       "kind": "empirical",
-      "statement": "Dated16:48:57UTC snapshot includes560/576completed fits:288binary and272scalar; missing2scalarT8 and14scalarT12.",
+      "statement": "All 576 fits completed: 288 binary and 288 scalar. All 192 three-seed recipe cells are complete; 96 models entered the final test.",
       "locations": [
         "abstract",
-        "section6",
-        "section8",
-        "appendixB"
+        "section5",
+        "section6"
       ],
       "evidence": [
-        "summary",
-        "snapshot"
+        "final-summary",
+        "final-computed"
       ],
       "checks": [
         {
           "operation": "value",
           "operands": [
             {
-              "artifact": "summary",
+              "artifact": "final-summary",
               "pointer": "/completed_fits"
-            }
-          ],
-          "expected": 560,
-          "abs_tol": 0,
-          "unit": "count"
-        },
-        {
-          "operation": "value",
-          "operands": [
-            {
-              "artifact": "summary",
-              "pointer": "/expected_fits"
             }
           ],
           "expected": 576,
@@ -929,19 +1024,7 @@
           "operation": "value",
           "operands": [
             {
-              "artifact": "summary",
-              "pointer": "/missing_fits"
-            }
-          ],
-          "expected": 16,
-          "abs_tol": 0,
-          "unit": "count"
-        },
-        {
-          "operation": "value",
-          "operands": [
-            {
-              "artifact": "summary",
+              "artifact": "final-summary",
               "pointer": "/encodings/bits/completed"
             }
           ],
@@ -953,11 +1036,11 @@
           "operation": "value",
           "operands": [
             {
-              "artifact": "summary",
+              "artifact": "final-summary",
               "pointer": "/encodings/scalar/completed"
             }
           ],
-          "expected": 272,
+          "expected": 288,
           "abs_tol": 0,
           "unit": "count"
         },
@@ -965,11 +1048,11 @@
           "operation": "value",
           "operands": [
             {
-              "artifact": "summary",
-              "pointer": "/architectures/scalar~1transformer8/completed"
+              "artifact": "final-summary",
+              "pointer": "/complete_recipe_cells"
             }
           ],
-          "expected": 16,
+          "expected": 192,
           "abs_tol": 0,
           "unit": "count"
         },
@@ -977,11 +1060,11 @@
           "operation": "value",
           "operands": [
             {
-              "artifact": "summary",
-              "pointer": "/architectures/scalar~1transformer12/completed"
+              "artifact": "final-summary",
+              "pointer": "/selected_models"
             }
           ],
-          "expected": 4,
+          "expected": 96,
           "abs_tol": 0,
           "unit": "count"
         }
@@ -995,25 +1078,22 @@
     {
       "id": "binary-threshold",
       "kind": "empirical",
-      "statement": "At the within-loss-selected checkpoint,14/288binary fits reach99percent within and7/288reach99percent both; seven consist of2resmlp20,2resmlp50,1g2f3,1g12f3 and1g8f5.",
+      "statement": "At within-loss-selected checkpoints,14/288 binary fits reach99percent within and7/288 reach99percent on both validation ranges. The seven include2resmlp20,2resmlp50,1g2f3,1g12f3,1g8f5.",
       "locations": [
-        "abstract",
-        "section6",
-        "figure2",
-        "section8"
+        "section6"
       ],
       "evidence": [
-        "summary",
+        "final-summary",
         "snapshot",
-        "overview-figure"
+        "manuscript-values"
       ],
       "checks": [
         {
           "operation": "value",
           "operands": [
             {
-              "artifact": "summary",
-              "pointer": "/encodings/bits/within_ge99"
+              "artifact": "final-summary",
+              "pointer": "/encodings/bits/validation_within_ge99"
             }
           ],
           "expected": 14,
@@ -1024,71 +1104,11 @@
           "operation": "value",
           "operands": [
             {
-              "artifact": "summary",
-              "pointer": "/encodings/bits/both_ge99"
+              "artifact": "final-summary",
+              "pointer": "/encodings/bits/validation_both_ge99"
             }
           ],
           "expected": 7,
-          "abs_tol": 0,
-          "unit": "count"
-        },
-        {
-          "operation": "value",
-          "operands": [
-            {
-              "artifact": "summary",
-              "pointer": "/architectures/bits~1resmlp20/both_ge99"
-            }
-          ],
-          "expected": 2,
-          "abs_tol": 0,
-          "unit": "count"
-        },
-        {
-          "operation": "value",
-          "operands": [
-            {
-              "artifact": "summary",
-              "pointer": "/architectures/bits~1resmlp50/both_ge99"
-            }
-          ],
-          "expected": 2,
-          "abs_tol": 0,
-          "unit": "count"
-        },
-        {
-          "operation": "value",
-          "operands": [
-            {
-              "artifact": "summary",
-              "pointer": "/architectures/bits~1hyper_g2_f3/both_ge99"
-            }
-          ],
-          "expected": 1,
-          "abs_tol": 0,
-          "unit": "count"
-        },
-        {
-          "operation": "value",
-          "operands": [
-            {
-              "artifact": "summary",
-              "pointer": "/architectures/bits~1hyper_g12_f3/both_ge99"
-            }
-          ],
-          "expected": 1,
-          "abs_tol": 0,
-          "unit": "count"
-        },
-        {
-          "operation": "value",
-          "operands": [
-            {
-              "artifact": "summary",
-              "pointer": "/architectures/bits~1hyper_g8_f5/both_ge99"
-            }
-          ],
-          "expected": 1,
           "abs_tol": 0,
           "unit": "count"
         }
@@ -1102,25 +1122,22 @@
     {
       "id": "replication-limit",
       "kind": "empirical",
-      "statement": "No architecture/learning-rate/decay setting reaches99percent in both domains in all3seeds; all96binary settings are complete. Threshold and illustrative recipes are posthoc descriptive choices.",
+      "statement": "No binary recipe reaches99percent on both validation domains across all3seeds. No selected recipe reaches99percent on both test domains across all3seeds.",
       "locations": [
         "abstract",
         "section6",
-        "section7",
-        "section8"
+        "section7"
       ],
       "evidence": [
-        "summary",
-        "recipes",
-        "snapshot"
+        "final-summary"
       ],
       "checks": [
         {
           "operation": "value",
           "operands": [
             {
-              "artifact": "summary",
-              "pointer": "/recipe_cells_with_all_seeds_both_ge99"
+              "artifact": "final-summary",
+              "pointer": "/encodings/bits/recipes_all_three_validation_both_ge99"
             }
           ],
           "expected": 0,
@@ -1131,11 +1148,11 @@
           "operation": "value",
           "operands": [
             {
-              "artifact": "summary",
-              "pointer": "/complete_recipe_cells"
+              "artifact": "final-summary",
+              "pointer": "/encodings/bits/selected_recipes_all_three_test_both_ge99"
             }
           ],
-          "expected": 186,
+          "expected": 0,
           "abs_tol": 0,
           "unit": "count"
         }
@@ -1149,75 +1166,73 @@
     {
       "id": "scalar-range",
       "kind": "empirical",
-      "statement": "272scalar fits have within accuracy14.20-15.86percent and CE1.94504-1.94572, close to ln7=1.94591.",
+      "statement": "All288 scalar fits have selected within-validation accuracy14.20-15.86percent and CE1.94504-1.94572. This is bounded to the tested recipe.",
       "locations": [
-        "abstract",
         "section6"
       ],
       "evidence": [
-        "summary",
-        "manuscript-values"
+        "final-summary"
       ],
       "checks": [
         {
           "operation": "value",
           "operands": [
             {
-              "artifact": "summary",
-              "pointer": "/encodings/scalar/within_accuracy_min"
+              "artifact": "final-summary",
+              "pointer": "/encodings/scalar/completed"
+            }
+          ],
+          "expected": 288,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-summary",
+              "pointer": "/encodings/scalar/validation_accuracy_min"
             }
           ],
           "expected": 0.142,
           "abs_tol": 5e-05,
-          "unit": "accuracy fraction"
+          "unit": "fraction"
         },
         {
           "operation": "value",
           "operands": [
             {
-              "artifact": "summary",
-              "pointer": "/encodings/scalar/within_accuracy_max"
+              "artifact": "final-summary",
+              "pointer": "/encodings/scalar/validation_accuracy_max"
             }
           ],
           "expected": 0.1586,
           "abs_tol": 5e-05,
-          "unit": "accuracy fraction"
+          "unit": "fraction"
         },
         {
           "operation": "value",
           "operands": [
             {
-              "artifact": "summary",
-              "pointer": "/encodings/scalar/within_loss_min"
+              "artifact": "final-summary",
+              "pointer": "/encodings/scalar/validation_loss_min"
             }
           ],
           "expected": 1.94504,
           "abs_tol": 5e-06,
-          "unit": "cross entropy"
+          "unit": "CE"
         },
         {
           "operation": "value",
           "operands": [
             {
-              "artifact": "summary",
-              "pointer": "/encodings/scalar/within_loss_max"
+              "artifact": "final-summary",
+              "pointer": "/encodings/scalar/validation_loss_max"
             }
           ],
           "expected": 1.94572,
           "abs_tol": 5e-06,
-          "unit": "cross entropy"
-        },
-        {
-          "operation": "value",
-          "operands": [
-            {
-              "artifact": "manuscript-values",
-              "pointer": "/uniform_cross_entropy"
-            }
-          ],
-          "expected": 1.94591,
-          "abs_tol": 5e-06,
-          "unit": "cross entropy"
+          "unit": "CE"
         }
       ],
       "review": "checked",
@@ -1229,16 +1244,16 @@
     {
       "id": "trajectory-seeds",
       "kind": "empirical",
-      "statement": "Figure3 shows all3seeds for4posthoc illustrative recipes. ResMLP20seed303 and ResMLP50seed101 atLR.003 WD0 learn both ranges accurately; other seeds in those recipes stay near uniform loss.",
+      "statement": "Figure4 retains all3seeds of the frozen selected recipes for4illustrative architectures. Selected residual20seed303 and residual50seed101 learn both domains while their other seeds remain near chance.",
       "locations": [
-        "section7",
-        "figure3"
+        "section8",
+        "figure4"
       ],
       "evidence": [
-        "snapshot",
-        "curves",
-        "curve-figure",
-        "computed-checks"
+        "final-curves",
+        "final-analysis",
+        "final-loss-figure",
+        "final-tests"
       ],
       "checks": [],
       "review": "checked",
@@ -1431,25 +1446,25 @@
     {
       "id": "history-custody",
       "kind": "derived",
-      "statement": "The560fit private audit covers56,007linkedsegments,44.8Mtrainingbatchrows and1.12Mvalidationrows; compact draft exports560fitpoints and24Killustrativevalidationrows, not all full histories.",
+      "statement": "Full576fit audit covers57,611 linked checkpoint segments,46.08M batches and1.152M validation records. Public archives include all histories, with192K selected validation points in Git.",
       "locations": [
-        "appendixB"
+        "appendixC"
       ],
       "evidence": [
-        "history-attestation",
-        "computed-checks",
-        "snapshot"
+        "final-history",
+        "final-computed",
+        "final-assets"
       ],
       "checks": [
         {
           "operation": "value",
           "operands": [
             {
-              "artifact": "history-attestation",
+              "artifact": "final-history",
               "pointer": "/cases_verified"
             }
           ],
-          "expected": 560,
+          "expected": 576,
           "abs_tol": 0,
           "unit": "count"
         },
@@ -1457,11 +1472,11 @@
           "operation": "value",
           "operands": [
             {
-              "artifact": "history-attestation",
+              "artifact": "final-history",
               "pointer": "/checkpoint_segments"
             }
           ],
-          "expected": 56007,
+          "expected": 57611,
           "abs_tol": 0,
           "unit": "count"
         },
@@ -1469,11 +1484,11 @@
           "operation": "value",
           "operands": [
             {
-              "artifact": "history-attestation",
+              "artifact": "final-history",
               "pointer": "/training_batch_records"
             }
           ],
-          "expected": 44800000,
+          "expected": 46080000,
           "abs_tol": 0,
           "unit": "count"
         },
@@ -1481,11 +1496,11 @@
           "operation": "value",
           "operands": [
             {
-              "artifact": "history-attestation",
+              "artifact": "final-history",
               "pointer": "/validation_records"
             }
           ],
-          "expected": 1120000,
+          "expected": 1152000,
           "abs_tol": 0,
           "unit": "count"
         },
@@ -1493,37 +1508,96 @@
           "operation": "value",
           "operands": [
             {
-              "artifact": "computed-checks",
-              "pointer": "/million_draft/illustrative_validation_rows"
+              "artifact": "final-computed",
+              "pointer": "/selected_curve_rows"
             }
           ],
-          "expected": 24000,
+          "expected": 192000,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-computed",
+              "pointer": "/release_assets_verified"
+            }
+          ],
+          "expected": 35,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-computed",
+              "pointer": "/release_members_hashed"
+            }
+          ],
+          "expected": 1443,
           "abs_tol": 0,
           "unit": "count"
         }
       ],
       "review": "checked",
       "reviewer": "Codex self-review; not independent review",
-      "scope": "Sanitized attestation of private full-history readback. Bundled exporter reread every560validation history; full raw training histories remain private pending final packaging.",
+      "scope": "Complete history verification and explicit scientific export; all batch windows independently recomputed from release archives.",
       "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
       "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
     },
     {
       "id": "test-and-review-status",
       "kind": "limitation",
-      "statement": "No million-example test values are included; full selection/test and final publication remain pending. Draft checked by its preparer, with neither independent review nor owner voice approval.",
+      "statement": "The single frozen final test is complete. All96selected checkpoints and12,582,912 saved prediction rows were verified. Self-review is not independent review or owner voice approval.",
       "locations": [
         "abstract",
-        "section5",
-        "section8",
-        "appendixB"
+        "section7",
+        "appendixC"
       ],
       "evidence": [
-        "snapshot",
-        "computed-checks",
-        "protocol"
+        "final-prediction-audit",
+        "final-computed"
       ],
-      "checks": [],
+      "checks": [
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-prediction-audit",
+              "pointer": "/selected_checkpoints_verified"
+            }
+          ],
+          "expected": 96,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-prediction-audit",
+              "pointer": "/prediction_rows_verified"
+            }
+          ],
+          "expected": 12582912,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-computed",
+              "pointer": "/saved_prediction_rows_rescored"
+            }
+          ],
+          "expected": 12582912,
+          "abs_tol": 0,
+          "unit": "count"
+        }
+      ],
       "review": "checked",
       "reviewer": "Codex self-review; not independent review",
       "scope": "Exact frozen datasets and recipes in PROTOCOL.md; no universal or causal claim.",
@@ -1533,14 +1607,14 @@
     {
       "id": "resource-and-source",
       "kind": "derived",
-      "statement": "The original screen and diagnostic used1.62639allocatedGPUhours; source hashes identify unchanged scientific modules. This excludes billing and node overhead; million-sweep final usage is pending.",
+      "statement": "Primary screen and diagnostic used1.62639allocatedGPUhours; the million-example study used104701seconds/29.08361hours across38 once-settled reservations, including123seconds final test. Billing and node overhead are excluded.",
       "locations": [
-        "appendixB"
+        "appendixC"
       ],
       "evidence": [
         "source-origins",
-        "historical-audit",
-        "resource-accounting"
+        "resource-accounting",
+        "million-resources"
       ],
       "checks": [
         {
@@ -1553,7 +1627,55 @@
           ],
           "expected": 1.62639,
           "abs_tol": 5e-06,
-          "unit": "allocated GPU hours"
+          "unit": "GPU-hours"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "million-resources",
+              "pointer": "/allocated_gpu_seconds"
+            }
+          ],
+          "expected": 104701,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "million-resources",
+              "pointer": "/allocated_gpu_hours"
+            }
+          ],
+          "expected": 29.08361,
+          "abs_tol": 5e-06,
+          "unit": "GPU-hours"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "million-resources",
+              "pointer": "/settled_reservations"
+            }
+          ],
+          "expected": 38,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "million-resources",
+              "pointer": "/final_test_container_seconds"
+            }
+          ],
+          "expected": 123,
+          "abs_tol": 0,
+          "unit": "count"
         }
       ],
       "review": "checked",
@@ -1561,6 +1683,418 @@
       "scope": "Historical allocated container time refreshed from seven unique settled receipts; not monetary billing.",
       "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
       "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    },
+    {
+      "id": "final-binary-winner",
+      "kind": "empirical",
+      "statement": "Within-validation selects binaryg2/f3 atLR.0003decay.01: within test99.87+-0.15percent/CE.00464+-.00451; outside75.79+-31.19percent/CE6.14582+-9.70511. Outside seed scores39.91,90.92,96.53percent.",
+      "locations": [
+        "abstract",
+        "section7",
+        "appendixB"
+      ],
+      "evidence": [
+        "final-summary",
+        "final-selection",
+        "final-tests"
+      ],
+      "checks": [
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-summary",
+              "pointer": "/selected_groups/11/learning_rate"
+            }
+          ],
+          "expected": 0.0003,
+          "abs_tol": 0,
+          "unit": "LR"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-summary",
+              "pointer": "/selected_groups/11/weight_decay"
+            }
+          ],
+          "expected": 0.01,
+          "abs_tol": 0,
+          "unit": "decay"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-summary",
+              "pointer": "/selected_groups/11/test_within_accuracy_mean"
+            }
+          ],
+          "expected": 0.9987,
+          "abs_tol": 5e-05,
+          "unit": "fraction"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-summary",
+              "pointer": "/selected_groups/11/test_within_accuracy_sd"
+            }
+          ],
+          "expected": 0.0015,
+          "abs_tol": 5e-05,
+          "unit": "fraction"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-summary",
+              "pointer": "/selected_groups/11/test_outside_accuracy_mean"
+            }
+          ],
+          "expected": 0.7579,
+          "abs_tol": 5e-05,
+          "unit": "fraction"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-summary",
+              "pointer": "/selected_groups/11/test_outside_accuracy_sd"
+            }
+          ],
+          "expected": 0.3119,
+          "abs_tol": 5e-05,
+          "unit": "fraction"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-summary",
+              "pointer": "/selected_groups/11/test_within_loss_mean"
+            }
+          ],
+          "expected": 0.00464,
+          "abs_tol": 5e-06,
+          "unit": "CE"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-summary",
+              "pointer": "/selected_groups/11/test_within_loss_sd"
+            }
+          ],
+          "expected": 0.00451,
+          "abs_tol": 5e-06,
+          "unit": "CE"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-summary",
+              "pointer": "/selected_groups/11/test_outside_loss_mean"
+            }
+          ],
+          "expected": 6.14582,
+          "abs_tol": 5e-06,
+          "unit": "CE"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-summary",
+              "pointer": "/selected_groups/11/test_outside_loss_sd"
+            }
+          ],
+          "expected": 9.70511,
+          "abs_tol": 5e-06,
+          "unit": "CE"
+        }
+      ],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Frozen validation-only selection, one held-out final phase, fixed dataset.",
+      "statistical_unit": "Three optimisation seeds; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimisation and finite-domain approximation; no learned algorithm identified."
+    },
+    {
+      "id": "final-bits-hyper_g8_f5",
+      "kind": "empirical",
+      "statement": "hyper_g8_f5 selected held-out means and sample SDs; no replacement based on test scores.",
+      "locations": [
+        "section7",
+        "appendixB"
+      ],
+      "evidence": [
+        "final-summary",
+        "final-tests"
+      ],
+      "checks": [
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-summary",
+              "pointer": "/selected_groups/15/test_within_accuracy_mean"
+            }
+          ],
+          "expected": 0.9771,
+          "abs_tol": 5e-05,
+          "unit": "fraction"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-summary",
+              "pointer": "/selected_groups/15/test_within_accuracy_sd"
+            }
+          ],
+          "expected": 0.0311,
+          "abs_tol": 5e-05,
+          "unit": "fraction"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-summary",
+              "pointer": "/selected_groups/15/test_outside_accuracy_mean"
+            }
+          ],
+          "expected": 0.9677,
+          "abs_tol": 5e-05,
+          "unit": "fraction"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-summary",
+              "pointer": "/selected_groups/15/test_outside_accuracy_sd"
+            }
+          ],
+          "expected": 0.0442,
+          "abs_tol": 5e-05,
+          "unit": "fraction"
+        }
+      ],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Frozen validation-only selection, one held-out final phase, fixed dataset.",
+      "statistical_unit": "Three optimisation seeds; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimisation and finite-domain approximation; no learned algorithm identified."
+    },
+    {
+      "id": "final-scalar-relational2",
+      "kind": "empirical",
+      "statement": "relational2 selected held-out means and sample SDs; no replacement based on test scores.",
+      "locations": [
+        "section7",
+        "appendixB"
+      ],
+      "evidence": [
+        "final-summary",
+        "final-tests"
+      ],
+      "checks": [
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-summary",
+              "pointer": "/selected_groups/24/test_within_accuracy_mean"
+            }
+          ],
+          "expected": 0.1435,
+          "abs_tol": 5e-05,
+          "unit": "fraction"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-summary",
+              "pointer": "/selected_groups/24/test_within_accuracy_sd"
+            }
+          ],
+          "expected": 0.0005,
+          "abs_tol": 5e-05,
+          "unit": "fraction"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-summary",
+              "pointer": "/selected_groups/24/test_outside_accuracy_mean"
+            }
+          ],
+          "expected": 0.1444,
+          "abs_tol": 5e-05,
+          "unit": "fraction"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-summary",
+              "pointer": "/selected_groups/24/test_outside_accuracy_sd"
+            }
+          ],
+          "expected": 0.0008,
+          "abs_tol": 5e-05,
+          "unit": "fraction"
+        }
+      ],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Frozen validation-only selection, one held-out final phase, fixed dataset.",
+      "statistical_unit": "Three optimisation seeds; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimisation and finite-domain approximation; no learned algorithm identified."
+    },
+    {
+      "id": "final-seed-successes",
+      "kind": "empirical",
+      "statement": "Four of48selected binarymodels exceed99percent in both test domains: one seed each ofresmlp20,resmlp50,g12/f3,g8/f5; noselectedrecipe does so acrossall3seeds.",
+      "locations": [
+        "abstract",
+        "section7"
+      ],
+      "evidence": [
+        "final-summary",
+        "final-tests"
+      ],
+      "checks": [
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-summary",
+              "pointer": "/encodings/bits/selected"
+            }
+          ],
+          "expected": 48,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-summary",
+              "pointer": "/encodings/bits/test_both_ge99"
+            }
+          ],
+          "expected": 4,
+          "abs_tol": 0,
+          "unit": "count"
+        }
+      ],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Frozen validation-only selection, one held-out final phase, fixed dataset.",
+      "statistical_unit": "Three optimisation seeds; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimisation and finite-domain approximation; no learned algorithm identified."
+    },
+    {
+      "id": "cross-device-differences",
+      "kind": "limitation",
+      "statement": "CPU replay of196608rows has0classmismatches,14raw-logit tolerance failures and2probability tolerance failures among192model/domaincomparisons. Largest raw difference.05212 and probabilitydifference.000400; tolerances not widened. No cross-device numerical identity claim.",
+      "locations": [
+        "appendixC"
+      ],
+      "evidence": [
+        "final-prediction-audit"
+      ],
+      "checks": [
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-prediction-audit",
+              "pointer": "/cpu_replay_rows_verified"
+            }
+          ],
+          "expected": 196608,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-prediction-audit",
+              "pointer": "/cpu_replay_summary/argmax_mismatches"
+            }
+          ],
+          "expected": 0,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-prediction-audit",
+              "pointer": "/cpu_replay_summary/raw_logit_comparisons_failed"
+            }
+          ],
+          "expected": 14,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-prediction-audit",
+              "pointer": "/cpu_replay_summary/probability_comparisons_failed"
+            }
+          ],
+          "expected": 2,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-prediction-audit",
+              "pointer": "/cpu_replay_summary/max_raw_logit_difference"
+            }
+          ],
+          "expected": 0.05212,
+          "abs_tol": 5e-06,
+          "unit": "logit"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "final-prediction-audit",
+              "pointer": "/cpu_replay_summary/max_probability_difference"
+            }
+          ],
+          "expected": 0.0004,
+          "abs_tol": 5e-07,
+          "unit": "probability"
+        }
+      ],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Frozen validation-only selection, one held-out final phase, fixed dataset.",
+      "statistical_unit": "Three optimisation seeds; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimisation and finite-domain approximation; no learned algorithm identified."
     }
   ]
 }
