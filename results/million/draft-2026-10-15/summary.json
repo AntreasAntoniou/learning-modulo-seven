@@ -1,0 +1,225 @@
+{
+  "completed_fits": 560,
+  "expected_fits": 576,
+  "missing_fits": 16,
+  "descriptive_accuracy_threshold": 0.99,
+  "threshold_status": "Post-hoc descriptive count, not a selection rule or hypothesis test.",
+  "encodings": {
+    "bits": {
+      "completed": 288,
+      "expected": 288,
+      "within_ge99": 14,
+      "both_ge99": 7,
+      "within_accuracy_min": 0.138916015625,
+      "within_accuracy_max": 1.0,
+      "within_loss_min": 2.0259582356629835e-05,
+      "within_loss_max": 1.947076603770256
+    },
+    "scalar": {
+      "completed": 272,
+      "expected": 288,
+      "within_ge99": 0,
+      "both_ge99": 0,
+      "within_accuracy_min": 0.1419677734375,
+      "within_accuracy_max": 0.1585693359375,
+      "within_loss_min": 1.945035681128502,
+      "within_loss_max": 1.9457191228866577
+    }
+  },
+  "architectures": {
+    "bits/mlp3": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "bits/mlp20": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "bits/mlp50": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "bits/resmlp20": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 2,
+      "both_ge99": 2
+    },
+    "bits/resmlp50": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 2,
+      "both_ge99": 2
+    },
+    "bits/transformer2": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "bits/transformer8": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "bits/transformer12": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "bits/relational2": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "bits/relational8": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "bits/relational12": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "bits/hyper_g2_f3": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 7,
+      "both_ge99": 1
+    },
+    "bits/hyper_g8_f3": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "bits/hyper_g12_f3": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 1,
+      "both_ge99": 1
+    },
+    "bits/hyper_g8_f1": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "bits/hyper_g8_f5": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 2,
+      "both_ge99": 1
+    },
+    "scalar/mlp3": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "scalar/mlp20": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "scalar/mlp50": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "scalar/resmlp20": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "scalar/resmlp50": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "scalar/transformer2": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "scalar/transformer8": {
+      "completed": 16,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "scalar/transformer12": {
+      "completed": 4,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "scalar/relational2": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "scalar/relational8": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "scalar/relational12": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "scalar/hyper_g2_f3": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "scalar/hyper_g8_f3": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "scalar/hyper_g12_f3": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "scalar/hyper_g8_f1": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    },
+    "scalar/hyper_g8_f5": {
+      "completed": 18,
+      "expected": 18,
+      "within_ge99": 0,
+      "both_ge99": 0
+    }
+  },
+  "complete_recipe_cells": 186,
+  "recipe_cells_with_all_seeds_both_ge99": 0
+}

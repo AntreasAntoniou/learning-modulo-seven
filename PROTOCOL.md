@@ -50,7 +50,7 @@ All five splits are mutually disjoint on raw integers; scalar float32 inputs wer
 4. Record an overall validation winner per encoding. Freeze the choices once.
 5. Evaluate the 96 retained models once on both test domains. A create-once fence precedes any test predictions. Training has no test-file input.
 
-The public snapshot is not this final phase. It contains only twelve complete binary g2/f3 fits and their validation curves. It must not be used to declare a sweep winner. The follow-up changes range and training budget as well as data size, so it is not a fourth point on the primary data-size curve.
+The dated v0.1.0 public snapshot contains twelve binary g2/f3 fits and remains unchanged. The local 15 October draft adds a fixed 560-fit snapshot (288 binary and 272 scalar), all 192 planned three-seed recipe cells and twelve illustrative trajectories. Incomplete cells receive no average. Neither snapshot is the final phase or establishes a sweep winner. The draft uses a post-hoc 99% threshold for descriptive counts and post-hoc illustrative curve choices; neither changes the preregistered selection rule. The follow-up changes range and training budget as well as data size, so it is not a fourth point on the primary data-size curve.
 
 ## Architecture definitions
 

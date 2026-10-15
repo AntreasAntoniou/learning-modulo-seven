@@ -1,0 +1,9 @@
+{
+  "status": "mechanical-checks-pass",
+  "exit_code": 0,
+  "artifacts": 37,
+  "claims": 24,
+  "numeric_checks": 65,
+  "pending_review": [],
+  "limitations": "Checks declared identities and arithmetic only; not scientific validity, coverage or owner approval."
+}

@@ -20,29 +20,102 @@
     "result": "passed"
   },
   "public_recomputed_checks": {
-    "million_snapshot": {
-      "batch_observations": 960000,
-      "completed_fits": 12,
-      "test_evaluated": false,
-      "validation_observations": 24000
+    "unchanged_scientific_files": 9,
+    "screen": {
+      "fits": 1728,
+      "selected_fits": 864,
+      "summary_cells": 288
     },
     "observed_bits": {
       "fits": 96,
       "selected_fits": 48,
       "summary_cells": 16
     },
-    "screen": {
-      "fits": 1728,
-      "selected_fits": 864,
-      "summary_cells": 288
+    "million_snapshot": {
+      "completed_fits": 12,
+      "validation_observations": 24000,
+      "batch_observations": 960000,
+      "test_evaluated": false
     },
-    "unchanged_scientific_files": 9
+    "million_draft": {
+      "completed_fits": 560,
+      "missing_fits": 16,
+      "complete_three_seed_cells": 186,
+      "illustrative_validation_rows": 24000,
+      "early_results_unchanged": 12,
+      "test_evaluated": false,
+      "sweep_selection_frozen": false
+    }
   },
   "report": {
-    "pages": 9,
-    "pdf_sha256": "90a33c29b578aaef80fe9b097f3b0db7ee31ff5e04f5e8b287d00e4d7de9fc72",
-    "rendered_page_review": "Every page visually inspected; appendix numeric table enlarged and re-inspected",
-    "template": "Official NeurIPS 2026, preprint mode"
+    "pages": 11,
+    "pdf_sha256": "c3ceee8635d9fbab1a4f68532d9d8c4174f2d1a639d7d63bdba43ceb52bc3d58",
+    "rendered_page_review": "All11pages visually inspected; changed pages2,8,11 inspected again after revision. No clipping or overlaps observed.",
+    "all_fonts_embedded": true,
+    "https_links": [
+      {
+        "page": 1,
+        "url": "https://antreas.io"
+      },
+      {
+        "page": 1,
+        "url": "https://github.com/AntreasAntoniou/learning-modulo-seven"
+      },
+      {
+        "page": 11,
+        "url": "https://github.com/AntreasAntoniou/learning-modulo-seven"
+      },
+      {
+        "page": 11,
+        "url": "https://github.com/AntreasAntoniou/learning-modulo-seven/releases/tag/v0.1.0"
+      },
+      {
+        "page": 11,
+        "url": "https://arxiv.org/abs/1609.09106"
+      },
+      {
+        "page": 11,
+        "url": "https://arxiv.org/abs/1706.01427"
+      },
+      {
+        "page": 11,
+        "url": "https://arxiv.org/abs/1711.05101"
+      },
+      {
+        "page": 11,
+        "url": "https://arxiv.org/abs/2201.02177"
+      }
+    ],
+    "template": "Official NeurIPS2026, preprint mode; pinned style in report/style.sha256",
+    "latex_unresolved_references_or_layout_warnings": false
   },
-  "scope": "Initial public release; metrics and source, not checkpoint or per-example prediction archives"
+  "scope": "Local dated draft prepared2026-10-15; completed earlier screen and partial560fit validation-only follow-up. No new public release.",
+  "draft_history_export": {
+    "completed_fits": 560,
+    "binary_fits": 288,
+    "scalar_fits": 272,
+    "full_private_history_receipt": "draft-history-audit.json",
+    "all560validation_histories_rehashed_and_selected_points_recomputed": true,
+    "illustrative_validation_rows": 24000,
+    "full_training_histories_bundled": false,
+    "final_selection_frozen": false,
+    "test_evaluated": false
+  },
+  "claim_audit": {
+    "status": "mechanical-checks-pass",
+    "exit_code": 0,
+    "artifacts": 37,
+    "claims": 24,
+    "numeric_checks": 65,
+    "pending_review": [],
+    "limitations": "Checks declared identities and arithmetic only; not scientific validity, coverage or owner approval."
+  },
+  "review": {
+    "kind": "Codex self-review",
+    "owner_voice_approval": false,
+    "independent_scientific_review": false,
+    "voice_lint": "CLEAN; provisional heuristic, three candidates adjudicated as non-findings. Not an authenticity certification.",
+    "private_voice_sources_exported": false
+  },
+  "verified_utc": "2026-10-15T17:28:25.279579+00:00"
 }

@@ -1,0 +1,46 @@
+{
+  "scope": "Historical primary screen and observed-bit diagnostic; excludes the separate million-example sweep.",
+  "attempt_count": 7,
+  "allocated_gpu_seconds": 5855.0,
+  "allocated_gpu_hours": 1.6263888888888889,
+  "monetary_billing": "unmeasured",
+  "node_lifetime_overhead_included": false,
+  "source": "Readback of seven unique settled private accounting receipts; infrastructure locators omitted.",
+  "receipts": [
+    {
+      "ordinal": 1,
+      "allocated_gpu_seconds": 0.0,
+      "private_receipt_sha256": "28736d5b5b5cf34bca23ac6408ae83963bd51fe5293a3f00e2c232520e506f49"
+    },
+    {
+      "ordinal": 2,
+      "allocated_gpu_seconds": 107.0,
+      "private_receipt_sha256": "d781f444df65e1078c0675fa4ca288e25febc5978f9091e933ce9b441f427b31"
+    },
+    {
+      "ordinal": 3,
+      "allocated_gpu_seconds": 8.0,
+      "private_receipt_sha256": "37cb2809915e381d87b04cb83a775d320abb62f8b339fc22eb21d796975be094"
+    },
+    {
+      "ordinal": 4,
+      "allocated_gpu_seconds": 1889.0,
+      "private_receipt_sha256": "9292a212d8dbe2f8f3fd0f31ee2fad1e08029e0358ef6151879a8ade9e7925da"
+    },
+    {
+      "ordinal": 5,
+      "allocated_gpu_seconds": 1730.0,
+      "private_receipt_sha256": "81e5716b7a808b48f4afd54e39d330ed617ea8b2c3fbc3e27f98f0c4a5e34972"
+    },
+    {
+      "ordinal": 6,
+      "allocated_gpu_seconds": 1779.0,
+      "private_receipt_sha256": "1a630479d04f1806cab53d548f9021ef099164109741da2fda94725013d193fe"
+    },
+    {
+      "ordinal": 7,
+      "allocated_gpu_seconds": 342.0,
+      "private_receipt_sha256": "e8946c917937686b22cb83770681ed1a0ba0b0253b43f2429db219924e5f7b1a"
+    }
+  ]
+}

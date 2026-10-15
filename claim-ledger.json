@@ -1,0 +1,1566 @@
+{
+  "schema_version": 1,
+  "status": "dated_local_validation_draft",
+  "review_date": "2026-10-15",
+  "review_kind": "Codex self-review with recomputation and rendered-page inspection",
+  "owner_voice_approval": false,
+  "independent_review": false,
+  "uncertainty_policy": "All reported plus/minus values are sampleSD across3optimizationseeds on one fixed dataset. Posthoc threshold counts are descriptive. Incomplete3seedmeans are omitted.",
+  "artifacts": [
+    {
+      "id": "source-origins",
+      "path": "provenance/source-origins.json",
+      "sha256": "458c1a48cc879f25c11907541c55e3351f37730474b271945314eaddffb77f9a",
+      "inputs": []
+    },
+    {
+      "id": "source-0",
+      "path": "experiments/million/config.json",
+      "sha256": "fa030e049cfff489d342bfa727407f3f9787f99dc7fc7f8739c6b02d0ca843c1",
+      "inputs": [
+        "source-origins"
+      ]
+    },
+    {
+      "id": "source-1",
+      "path": "experiments/million/data.py",
+      "sha256": "d38ce8c714f04a6f6abf1a24b6ce50c3a5888d9b1d3a56a34fc248a1ae83d3ca",
+      "inputs": [
+        "source-origins"
+      ]
+    },
+    {
+      "id": "source-2",
+      "path": "experiments/million/models.py",
+      "sha256": "4549302d4e6c134ec8b06143fa2318c110ba6156d1168736c32e083e17f52c8a",
+      "inputs": [
+        "source-origins"
+      ]
+    },
+    {
+      "id": "source-3",
+      "path": "experiments/million/selection.py",
+      "sha256": "715be532b89f812f6d41b6c52056dfcc058edfcf8df2cc1c7743824683f6d077",
+      "inputs": [
+        "source-origins"
+      ]
+    },
+    {
+      "id": "source-4",
+      "path": "experiments/million/train.py",
+      "sha256": "9b916e3dacef55d9065dc6065c563f0f2a787a8a23e948471217e28136f4468f",
+      "inputs": [
+        "source-origins"
+      ]
+    },
+    {
+      "id": "source-5",
+      "path": "experiments/observed_bits/modulo-observed-bits.json",
+      "sha256": "4d5b1f639c6d32f42e01af73556cf35a0b6c0ece1179a92b157f5518b287560c",
+      "inputs": [
+        "source-origins"
+      ]
+    },
+    {
+      "id": "source-6",
+      "path": "experiments/observed_bits/suite.py",
+      "sha256": "2e192c6b28b4f1e2d7547eadaa0bdd5a8061f8a33151a73a8f969f45bb7f838a",
+      "inputs": [
+        "source-origins"
+      ]
+    },
+    {
+      "id": "source-7",
+      "path": "experiments/screen/config.json",
+      "sha256": "3807782d73d5ff524082fc0c539d397ecac7d9d86a605660a94f267e8a5a8849",
+      "inputs": [
+        "source-origins"
+      ]
+    },
+    {
+      "id": "source-8",
+      "path": "experiments/screen/suite.py",
+      "sha256": "6d5de815b261e0622a1fd4e384e0dd3dd4d6733ef109b7b0634d2d53d7438a8d",
+      "inputs": [
+        "source-origins"
+      ]
+    },
+    {
+      "id": "primary-raw",
+      "path": "results/screen/all-fits.jsonl.gz",
+      "sha256": "7d1364bd051d3585f3b617dae52592a0be5e003884e72312bb0581ed867ed2bb",
+      "inputs": []
+    },
+    {
+      "id": "diagnostic-raw",
+      "path": "results/observed_bits/all-fits.jsonl.gz",
+      "sha256": "9f88dfc4f25f5b15e0ae9b2f95d0a9c1e627869411b0c26fa7bb72c031373280",
+      "inputs": []
+    },
+    {
+      "id": "primary-summary",
+      "path": "results/screen/summary.csv",
+      "sha256": "5d7c019b62fc6956a8a95daab7b354a1bf764dcc417651618458b5457118f7ed",
+      "inputs": [
+        "primary-raw"
+      ]
+    },
+    {
+      "id": "diagnostic-summary",
+      "path": "results/observed_bits/summary.csv",
+      "sha256": "036bbfad3317b2aefbe4ffe9a6870d9ff38d3bdea69fc263f3587caf77d13ed6",
+      "inputs": [
+        "diagnostic-raw"
+      ]
+    },
+    {
+      "id": "primary-selected",
+      "path": "results/screen/selected-fits.csv",
+      "sha256": "1cb42f4ff3dc3563c1e73e8e31f04bf766705d017a6478b98840242a296d1dfe",
+      "inputs": [
+        "primary-raw"
+      ]
+    },
+    {
+      "id": "bias-probes",
+      "path": "results/screen/mechanism-probes.json",
+      "sha256": "86df6889b9369429e00c67411fca80294d13ba94745362486fb3177da9ba96c8",
+      "inputs": []
+    },
+    {
+      "id": "baselines",
+      "path": "results/screen/baselines.json",
+      "sha256": "4c23d16af51af7df8a1088e8a6067a63018753dd89da253eecbabacb4db619af",
+      "inputs": []
+    },
+    {
+      "id": "manuscript-values",
+      "path": "provenance/manuscript-values.json",
+      "sha256": "5069f1888b492be7b463ceb6823964bc44b27879f8eb3092ff6239dc5e32f091",
+      "inputs": [
+        "primary-raw",
+        "diagnostic-raw",
+        "bias-probes"
+      ]
+    },
+    {
+      "id": "snapshot",
+      "path": "results/million/draft-2026-10-15/snapshot.json",
+      "sha256": "f99140b004c6c1b29f5534ab37335cadc56ae1734ae416c9ede400983d3a66e1",
+      "inputs": []
+    },
+    {
+      "id": "history-attestation",
+      "path": "provenance/draft-history-audit.json",
+      "sha256": "aa738e6b3b56d3137f5ebaaa7a82a1dd666b89c28a1cdb96535367bbd5aeb8ae",
+      "inputs": []
+    },
+    {
+      "id": "curves",
+      "path": "results/million/draft-2026-10-15/illustrative-curves.jsonl.gz",
+      "sha256": "7ec903fd954d56343d0eafcf3cb56c09edf9e600d02ce40d3adc1c2900210885",
+      "inputs": [
+        "snapshot"
+      ]
+    },
+    {
+      "id": "draft-analysis",
+      "path": "analysis/million_draft.py",
+      "sha256": "7a739974c8f22b81ab2458bdead6fc51a3a1e2f4e58e075115985332c16d463c",
+      "inputs": []
+    },
+    {
+      "id": "exporter",
+      "path": "analysis/export_million_snapshot.py",
+      "sha256": "18176ef8ed1ffccef7e660836997f82ae040280b9d4d2ba2eb8236ae93a059cc",
+      "inputs": []
+    },
+    {
+      "id": "summary",
+      "path": "results/million/draft-2026-10-15/summary.json",
+      "sha256": "8ecbb9b47d02fe2e23c9a52a61141d67062b9f3d4264d690161cb243533df15a",
+      "inputs": [
+        "snapshot",
+        "draft-analysis"
+      ]
+    },
+    {
+      "id": "recipes",
+      "path": "results/million/draft-2026-10-15/recipe-statistics.csv",
+      "sha256": "14c8275f418864cf202c0ee574991285bcb20f73d4d62bcd71a26d06a25417c2",
+      "inputs": [
+        "snapshot",
+        "draft-analysis"
+      ]
+    },
+    {
+      "id": "overview-figure",
+      "path": "report/figures/million-binary-overview.pdf",
+      "sha256": "008c6b72dc9e9691abaf2a4dd15cce172eae9a8aeb700e9a2347768332b46f18",
+      "inputs": [
+        "snapshot",
+        "draft-analysis"
+      ]
+    },
+    {
+      "id": "curve-figure",
+      "path": "report/figures/million-draft-learning-curves.pdf",
+      "sha256": "6759443d86b039ef1ea1963061910de8dff6f8bdac4fc30d81fb6b9404095d56",
+      "inputs": [
+        "curves",
+        "draft-analysis"
+      ]
+    },
+    {
+      "id": "hyper-table",
+      "path": "report/tables/million-hyper-settings.tex",
+      "sha256": "3b2dd7f0125d8062fcdef184bb4fad55ff0e04cde52fdd623161142852e165ff",
+      "inputs": [
+        "snapshot",
+        "draft-analysis"
+      ]
+    },
+    {
+      "id": "screen-table",
+      "path": "report/tables/screen.tex",
+      "sha256": "ac6e956b1ee2aa18c5dc9b05173aff2f92a15c852be78de5daa40600ac4baaa5",
+      "inputs": [
+        "primary-summary"
+      ]
+    },
+    {
+      "id": "literature",
+      "path": "provenance/literature-check.json",
+      "sha256": "e6e3771e710f89bcbe8fe4b39fc5be8e76a9dd22ee514d5ee992466de7dad5c4",
+      "inputs": []
+    },
+    {
+      "id": "historical-audit",
+      "path": "provenance/v0.1.0-verification.json",
+      "sha256": "daae61a821168d51585e26fddd96cbcb9d73135abe11a14f935b2ed636690052",
+      "inputs": []
+    },
+    {
+      "id": "verifier",
+      "path": "analysis/verify_results.py",
+      "sha256": "16cf9f36d56659db033a39d925aa09aa619ab4e39157efafa30a319467dd267b",
+      "inputs": []
+    },
+    {
+      "id": "computed-checks",
+      "path": "provenance/draft-computed-checks.json",
+      "sha256": "d3686df454410385ff7e8ef81650dae97acb6329eed8cbda5a7e5ff8d1fb95d9",
+      "inputs": [
+        "verifier",
+        "snapshot",
+        "summary",
+        "recipes",
+        "curves",
+        "primary-raw",
+        "diagnostic-raw"
+      ]
+    },
+    {
+      "id": "protocol",
+      "path": "PROTOCOL.md",
+      "sha256": "597da95a66dd421b94d30f9d36d4feb5abef1c83124a6b70400b06fd1fb42f27",
+      "inputs": []
+    },
+    {
+      "id": "manuscript",
+      "path": "report/report.tex",
+      "sha256": "f260c9b27c5476a55fcab6f40e0ace717dcfc22f1cd3ff0a35baa1aa50946176",
+      "inputs": [
+        "summary",
+        "manuscript-values",
+        "literature",
+        "protocol"
+      ]
+    },
+    {
+      "id": "pdf",
+      "path": "report/report.pdf",
+      "sha256": "c3ceee8635d9fbab1a4f68532d9d8c4174f2d1a639d7d63bdba43ceb52bc3d58",
+      "inputs": [
+        "manuscript",
+        "overview-figure",
+        "curve-figure",
+        "hyper-table",
+        "screen-table"
+      ]
+    },
+    {
+      "id": "resource-accounting",
+      "path": "provenance/resource-accounting.json",
+      "sha256": "5bae6a5872cd6058fc3316b7cec1bb3011d8a94dbec7807325b650233c5bd3fa"
+    }
+  ],
+  "claims": [
+    {
+      "id": "primary-shallow",
+      "kind": "empirical",
+      "statement": "At65,536 training examples the shallow binary hypernetwork scores94.56+-2.12 percent within and11.94+-2.39 outside; within seed scores92.44,94.56,96.69. At256 and4096 its mean within scores are14.68 and14.40.",
+      "locations": [
+        "abstract",
+        "section3",
+        "section4",
+        "section8"
+      ],
+      "evidence": [
+        "manuscript-values"
+      ],
+      "checks": [
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/primary_hyper_g2_f3_65536_test/mean"
+            }
+          ],
+          "expected": 94.56,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/primary_hyper_g2_f3_65536_test/sd"
+            }
+          ],
+          "expected": 2.12,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/primary_hyper_g2_f3_65536_ood/mean"
+            }
+          ],
+          "expected": 11.94,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/primary_hyper_g2_f3_65536_ood/sd"
+            }
+          ],
+          "expected": 2.39,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/primary_hyper_g2_f3_65536_test/values/0"
+            }
+          ],
+          "expected": 92.44,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/primary_hyper_g2_f3_65536_test/values/1"
+            }
+          ],
+          "expected": 94.56,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/primary_hyper_g2_f3_65536_test/values/2"
+            }
+          ],
+          "expected": 96.69,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/primary_hyper_g2_f3_256_test/mean"
+            }
+          ],
+          "expected": 14.68,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/primary_hyper_g2_f3_4096_test/mean"
+            }
+          ],
+          "expected": 14.4,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        }
+      ],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Exact frozen datasets and recipes in PROTOCOL.md; no universal or causal claim.",
+      "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    },
+    {
+      "id": "deeper-seeds",
+      "kind": "empirical",
+      "statement": "Deeper g8/f3 has mixed within-test seeds at4096 and65536, so the observed outcome is not monotonic in sample size.",
+      "locations": [
+        "section3",
+        "section8",
+        "figure1"
+      ],
+      "evidence": [
+        "manuscript-values"
+      ],
+      "checks": [
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/primary_hyper_g8_f3_4096_test/values/0"
+            }
+          ],
+          "expected": 14.56,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/primary_hyper_g8_f3_4096_test/values/1"
+            }
+          ],
+          "expected": 83.42,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/primary_hyper_g8_f3_4096_test/values/2"
+            }
+          ],
+          "expected": 99.01,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/primary_hyper_g8_f3_65536_test/values/0"
+            }
+          ],
+          "expected": 94.54,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/primary_hyper_g8_f3_65536_test/values/1"
+            }
+          ],
+          "expected": 14.06,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/primary_hyper_g8_f3_65536_test/values/2"
+            }
+          ],
+          "expected": 14.03,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        }
+      ],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Exact frozen datasets and recipes in PROTOCOL.md; no universal or causal claim.",
+      "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    },
+    {
+      "id": "exposure-confound",
+      "kind": "derived",
+      "statement": "153,600 presentations imply nominal600,37.5,2.34375 pool passes; the largest runs encounter approximately59,300 distinct values.",
+      "locations": [
+        "section3"
+      ],
+      "evidence": [
+        "manuscript-values",
+        "source-8"
+      ],
+      "checks": [
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/nominal_exposures/0"
+            }
+          ],
+          "expected": 600,
+          "abs_tol": 0,
+          "unit": "nominal passes"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/nominal_exposures/1"
+            }
+          ],
+          "expected": 37.5,
+          "abs_tol": 0,
+          "unit": "nominal passes"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/nominal_exposures/2"
+            }
+          ],
+          "expected": 2.34375,
+          "abs_tol": 0,
+          "unit": "nominal passes"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/expected_distinct_at_65536"
+            }
+          ],
+          "expected": 59300,
+          "abs_tol": 100,
+          "unit": "expected unique examples"
+        }
+      ],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Exact frozen datasets and recipes in PROTOCOL.md; no universal or causal claim.",
+      "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    },
+    {
+      "id": "diagnostic",
+      "kind": "empirical",
+      "statement": "Observed-bit diagnostic has81.40+-11.27 percent within,36.68+-28.79 outside, with outside seeds13.21,28.04,68.80; multiple factors changed together.",
+      "locations": [
+        "section4",
+        "table1"
+      ],
+      "evidence": [
+        "manuscript-values",
+        "diagnostic-raw",
+        "protocol"
+      ],
+      "checks": [
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/diagnostic_hyper_g2_f3_65536_test/mean"
+            }
+          ],
+          "expected": 81.4,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/diagnostic_hyper_g2_f3_65536_test/sd"
+            }
+          ],
+          "expected": 11.27,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/diagnostic_hyper_g2_f3_65536_ood/mean"
+            }
+          ],
+          "expected": 36.68,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/diagnostic_hyper_g2_f3_65536_ood/sd"
+            }
+          ],
+          "expected": 28.79,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/diagnostic_hyper_g2_f3_65536_ood/values/0"
+            }
+          ],
+          "expected": 13.21,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/diagnostic_hyper_g2_f3_65536_ood/values/1"
+            }
+          ],
+          "expected": 28.04,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/diagnostic_hyper_g2_f3_65536_ood/values/2"
+            }
+          ],
+          "expected": 68.8,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        }
+      ],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Exact frozen datasets and recipes in PROTOCOL.md; no universal or causal claim.",
+      "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    },
+    {
+      "id": "bias-probe",
+      "kind": "empirical",
+      "statement": "Final generated bias alone scores14.73+-1.99 percent; full model94.56+-2.12 and prediction minus final bias90.69+-3.24. This is a frozen decomposition, not retraining.",
+      "locations": [
+        "section4.1"
+      ],
+      "evidence": [
+        "manuscript-values",
+        "bias-probes"
+      ],
+      "checks": [
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/bias_output_bias_only/mean"
+            }
+          ],
+          "expected": 14.73,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/bias_output_bias_only/sd"
+            }
+          ],
+          "expected": 1.99,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/bias_full/mean"
+            }
+          ],
+          "expected": 94.56,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/bias_full/sd"
+            }
+          ],
+          "expected": 2.12,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/bias_without_output_bias/mean"
+            }
+          ],
+          "expected": 90.69,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/bias_without_output_bias/sd"
+            }
+          ],
+          "expected": 3.24,
+          "abs_tol": 0.005,
+          "unit": "percent"
+        }
+      ],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Exact frozen datasets and recipes in PROTOCOL.md; no universal or causal claim.",
+      "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    },
+    {
+      "id": "smooth-controls",
+      "kind": "empirical",
+      "statement": "g8/f1 outside R2 at65536 is0.99626 on multiplication and0.93341 on sphere volume. Cubic baseline fits the cubic control to numerical precision.",
+      "locations": [
+        "section1",
+        "section4.2"
+      ],
+      "evidence": [
+        "manuscript-values",
+        "baselines"
+      ],
+      "checks": [
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/product_hyper_g8_f1_ood_r2/mean"
+            }
+          ],
+          "expected": 0.99626,
+          "abs_tol": 5e-06,
+          "unit": "R squared"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/sphere_hyper_g8_f1_ood_r2/mean"
+            }
+          ],
+          "expected": 0.93341,
+          "abs_tol": 5e-06,
+          "unit": "R squared"
+        }
+      ],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Exact frozen datasets and recipes in PROTOCOL.md; no universal or causal claim.",
+      "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    },
+    {
+      "id": "binary-identity",
+      "kind": "theoretical",
+      "statement": "The positional binary modulo7 weights repeat1,2,4 because2^3 is1 mod7; this identity is an available structure, not supplied supervision or a learned mechanism.",
+      "locations": [
+        "section2",
+        "section8"
+      ],
+      "evidence": [
+        "source-1",
+        "protocol"
+      ],
+      "checks": [],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Integer positional identity, checked algebraically; no empirical algorithm-discovery claim.",
+      "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    },
+    {
+      "id": "protocol",
+      "kind": "derived",
+      "statement": "Frozen grid has576fits;1M unique integers,10passes,10M presentations and80K updates;5000=39*128+8 yields2000 validation points perfit; all576 precede frozen validation-only choice and96 retained final tests.",
+      "locations": [
+        "section5",
+        "table2",
+        "appendixB"
+      ],
+      "evidence": [
+        "protocol",
+        "source-0",
+        "source-1",
+        "source-3",
+        "source-4",
+        "computed-checks"
+      ],
+      "checks": [],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Exact frozen datasets and recipes in PROTOCOL.md; no universal or causal claim.",
+      "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    },
+    {
+      "id": "model-mechanism",
+      "kind": "derived",
+      "statement": "Generator emits every target weight and bias per input and receives the backpropagated training signal; only generator parameters are independently learned. Architecture widths are approximately parameter matched, not FLOP matched.",
+      "locations": [
+        "section2.1"
+      ],
+      "evidence": [
+        "source-2",
+        "source-8",
+        "protocol"
+      ],
+      "checks": [],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Exact frozen datasets and recipes in PROTOCOL.md; no universal or causal claim.",
+      "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    },
+    {
+      "id": "snapshot-counts",
+      "kind": "empirical",
+      "statement": "Dated16:48:57UTC snapshot includes560/576completed fits:288binary and272scalar; missing2scalarT8 and14scalarT12.",
+      "locations": [
+        "abstract",
+        "section6",
+        "section8",
+        "appendixB"
+      ],
+      "evidence": [
+        "summary",
+        "snapshot"
+      ],
+      "checks": [
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "summary",
+              "pointer": "/completed_fits"
+            }
+          ],
+          "expected": 560,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "summary",
+              "pointer": "/expected_fits"
+            }
+          ],
+          "expected": 576,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "summary",
+              "pointer": "/missing_fits"
+            }
+          ],
+          "expected": 16,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "summary",
+              "pointer": "/encodings/bits/completed"
+            }
+          ],
+          "expected": 288,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "summary",
+              "pointer": "/encodings/scalar/completed"
+            }
+          ],
+          "expected": 272,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "summary",
+              "pointer": "/architectures/scalar~1transformer8/completed"
+            }
+          ],
+          "expected": 16,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "summary",
+              "pointer": "/architectures/scalar~1transformer12/completed"
+            }
+          ],
+          "expected": 4,
+          "abs_tol": 0,
+          "unit": "count"
+        }
+      ],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Exact frozen datasets and recipes in PROTOCOL.md; no universal or causal claim.",
+      "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    },
+    {
+      "id": "binary-threshold",
+      "kind": "empirical",
+      "statement": "At the within-loss-selected checkpoint,14/288binary fits reach99percent within and7/288reach99percent both; seven consist of2resmlp20,2resmlp50,1g2f3,1g12f3 and1g8f5.",
+      "locations": [
+        "abstract",
+        "section6",
+        "figure2",
+        "section8"
+      ],
+      "evidence": [
+        "summary",
+        "snapshot",
+        "overview-figure"
+      ],
+      "checks": [
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "summary",
+              "pointer": "/encodings/bits/within_ge99"
+            }
+          ],
+          "expected": 14,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "summary",
+              "pointer": "/encodings/bits/both_ge99"
+            }
+          ],
+          "expected": 7,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "summary",
+              "pointer": "/architectures/bits~1resmlp20/both_ge99"
+            }
+          ],
+          "expected": 2,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "summary",
+              "pointer": "/architectures/bits~1resmlp50/both_ge99"
+            }
+          ],
+          "expected": 2,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "summary",
+              "pointer": "/architectures/bits~1hyper_g2_f3/both_ge99"
+            }
+          ],
+          "expected": 1,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "summary",
+              "pointer": "/architectures/bits~1hyper_g12_f3/both_ge99"
+            }
+          ],
+          "expected": 1,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "summary",
+              "pointer": "/architectures/bits~1hyper_g8_f5/both_ge99"
+            }
+          ],
+          "expected": 1,
+          "abs_tol": 0,
+          "unit": "count"
+        }
+      ],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Exact frozen datasets and recipes in PROTOCOL.md; no universal or causal claim.",
+      "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    },
+    {
+      "id": "replication-limit",
+      "kind": "empirical",
+      "statement": "No architecture/learning-rate/decay setting reaches99percent in both domains in all3seeds; all96binary settings are complete. Threshold and illustrative recipes are posthoc descriptive choices.",
+      "locations": [
+        "abstract",
+        "section6",
+        "section7",
+        "section8"
+      ],
+      "evidence": [
+        "summary",
+        "recipes",
+        "snapshot"
+      ],
+      "checks": [
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "summary",
+              "pointer": "/recipe_cells_with_all_seeds_both_ge99"
+            }
+          ],
+          "expected": 0,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "summary",
+              "pointer": "/complete_recipe_cells"
+            }
+          ],
+          "expected": 186,
+          "abs_tol": 0,
+          "unit": "count"
+        }
+      ],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Exact frozen datasets and recipes in PROTOCOL.md; no universal or causal claim.",
+      "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    },
+    {
+      "id": "scalar-range",
+      "kind": "empirical",
+      "statement": "272scalar fits have within accuracy14.20-15.86percent and CE1.94504-1.94572, close to ln7=1.94591.",
+      "locations": [
+        "abstract",
+        "section6"
+      ],
+      "evidence": [
+        "summary",
+        "manuscript-values"
+      ],
+      "checks": [
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "summary",
+              "pointer": "/encodings/scalar/within_accuracy_min"
+            }
+          ],
+          "expected": 0.142,
+          "abs_tol": 5e-05,
+          "unit": "accuracy fraction"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "summary",
+              "pointer": "/encodings/scalar/within_accuracy_max"
+            }
+          ],
+          "expected": 0.1586,
+          "abs_tol": 5e-05,
+          "unit": "accuracy fraction"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "summary",
+              "pointer": "/encodings/scalar/within_loss_min"
+            }
+          ],
+          "expected": 1.94504,
+          "abs_tol": 5e-06,
+          "unit": "cross entropy"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "summary",
+              "pointer": "/encodings/scalar/within_loss_max"
+            }
+          ],
+          "expected": 1.94572,
+          "abs_tol": 5e-06,
+          "unit": "cross entropy"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "manuscript-values",
+              "pointer": "/uniform_cross_entropy"
+            }
+          ],
+          "expected": 1.94591,
+          "abs_tol": 5e-06,
+          "unit": "cross entropy"
+        }
+      ],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Exact frozen datasets and recipes in PROTOCOL.md; no universal or causal claim.",
+      "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    },
+    {
+      "id": "trajectory-seeds",
+      "kind": "empirical",
+      "statement": "Figure3 shows all3seeds for4posthoc illustrative recipes. ResMLP20seed303 and ResMLP50seed101 atLR.003 WD0 learn both ranges accurately; other seeds in those recipes stay near uniform loss.",
+      "locations": [
+        "section7",
+        "figure3"
+      ],
+      "evidence": [
+        "snapshot",
+        "curves",
+        "curve-figure",
+        "computed-checks"
+      ],
+      "checks": [],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Exact frozen datasets and recipes in PROTOCOL.md; no universal or causal claim.",
+      "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    },
+    {
+      "id": "hyperparameter-slice",
+      "kind": "empirical",
+      "statement": "Table3 contains all18g2/f3fits, with within-selected outside scores. LR.0003WD0 allseeds exceed99within but outside ranges19.01-98.23; WD.01outside39.48,91.10,96.18; WD.1allwithin<16. LR.003WD0seed303scores99.88/99.72; other within scores15.44,34.75.",
+      "locations": [
+        "section7.1",
+        "table3"
+      ],
+      "evidence": [
+        "snapshot",
+        "hyper-table",
+        "computed-checks"
+      ],
+      "checks": [],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Exact frozen datasets and recipes in PROTOCOL.md; no universal or causal claim.",
+      "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    },
+    {
+      "id": "grokking-boundary",
+      "kind": "limitation",
+      "statement": "Late drops do not establish prolonged memorization before generalization: changing-batch training windows and within-validation improve together in illustrated shallow hypernetwork cases.",
+      "locations": [
+        "section7.2"
+      ],
+      "evidence": [
+        "curves",
+        "curve-figure",
+        "literature"
+      ],
+      "checks": [],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Exact frozen datasets and recipes in PROTOCOL.md; no universal or causal claim.",
+      "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    },
+    {
+      "id": "literature-scope",
+      "kind": "literature",
+      "statement": "HyperNetworks supports generated weights; relational networks support pairwise reasoning modules; AdamW supports decoupled decay; grokking describes delayed generalization after overfitting.",
+      "locations": [
+        "section2",
+        "section7.2",
+        "references"
+      ],
+      "evidence": [
+        "literature"
+      ],
+      "checks": [],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Four primary-paper abstracts and metadata checked at recorded versions; narrow conceptual citations only, not an exhaustive novelty review.",
+      "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    },
+    {
+      "id": "main-boundary",
+      "kind": "limitation",
+      "statement": "Finite-domain high accuracy and three seeds do not establish a dependable rule learner, a unique mechanism, variable-length arithmetic or independent-data robustness.",
+      "locations": [
+        "title",
+        "abstract",
+        "section8"
+      ],
+      "evidence": [
+        "protocol",
+        "summary",
+        "manuscript-values"
+      ],
+      "checks": [],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Exact frozen datasets and recipes in PROTOCOL.md; no universal or causal claim.",
+      "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    },
+    {
+      "id": "future-mechanisms",
+      "kind": "hypothesis",
+      "statement": "Retrained component controls, independent dataset seeds and matched domain shifts could distinguish algorithmic from finite-domain explanations.",
+      "locations": [
+        "section8"
+      ],
+      "evidence": [],
+      "checks": [],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Proposed follow-ups only; not executed or newly authorized in this draft.",
+      "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    },
+    {
+      "id": "all-screen-tables",
+      "kind": "empirical",
+      "statement": "AppendixA tables report within-selected per-seed results and sampleSDs, including negative and failed-to-learn outcomes, without using outside test metrics for selection.",
+      "locations": [
+        "appendixA",
+        "tables4-5"
+      ],
+      "evidence": [
+        "primary-raw",
+        "primary-summary",
+        "screen-table",
+        "computed-checks"
+      ],
+      "checks": [],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Exact frozen datasets and recipes in PROTOCOL.md; no universal or causal claim.",
+      "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    },
+    {
+      "id": "historical-verification",
+      "kind": "derived",
+      "statement": "Previously completed screen audit covered1840artifacts,7296evaluation sets and912checkpoint replays on16examples each; this is bounded replay, not independent retraining.",
+      "locations": [
+        "appendixB"
+      ],
+      "evidence": [
+        "historical-audit"
+      ],
+      "checks": [
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "historical-audit",
+              "pointer": "/completed_screen_historical_audit/hashed_artifacts"
+            }
+          ],
+          "expected": 1840,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "historical-audit",
+              "pointer": "/completed_screen_historical_audit/recomputed_evaluation_sets"
+            }
+          ],
+          "expected": 7296,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "historical-audit",
+              "pointer": "/completed_screen_historical_audit/selected_checkpoints_replayed"
+            }
+          ],
+          "expected": 912,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "historical-audit",
+              "pointer": "/completed_screen_historical_audit/examples_per_split_per_checkpoint_replay"
+            }
+          ],
+          "expected": 16,
+          "abs_tol": 0,
+          "unit": "count"
+        }
+      ],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Exact frozen datasets and recipes in PROTOCOL.md; no universal or causal claim.",
+      "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    },
+    {
+      "id": "history-custody",
+      "kind": "derived",
+      "statement": "The560fit private audit covers56,007linkedsegments,44.8Mtrainingbatchrows and1.12Mvalidationrows; compact draft exports560fitpoints and24Killustrativevalidationrows, not all full histories.",
+      "locations": [
+        "appendixB"
+      ],
+      "evidence": [
+        "history-attestation",
+        "computed-checks",
+        "snapshot"
+      ],
+      "checks": [
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "history-attestation",
+              "pointer": "/cases_verified"
+            }
+          ],
+          "expected": 560,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "history-attestation",
+              "pointer": "/checkpoint_segments"
+            }
+          ],
+          "expected": 56007,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "history-attestation",
+              "pointer": "/training_batch_records"
+            }
+          ],
+          "expected": 44800000,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "history-attestation",
+              "pointer": "/validation_records"
+            }
+          ],
+          "expected": 1120000,
+          "abs_tol": 0,
+          "unit": "count"
+        },
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "computed-checks",
+              "pointer": "/million_draft/illustrative_validation_rows"
+            }
+          ],
+          "expected": 24000,
+          "abs_tol": 0,
+          "unit": "count"
+        }
+      ],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Sanitized attestation of private full-history readback. Bundled exporter reread every560validation history; full raw training histories remain private pending final packaging.",
+      "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    },
+    {
+      "id": "test-and-review-status",
+      "kind": "limitation",
+      "statement": "No million-example test values are included; full selection/test and final publication remain pending. Draft checked by its preparer, with neither independent review nor owner voice approval.",
+      "locations": [
+        "abstract",
+        "section5",
+        "section8",
+        "appendixB"
+      ],
+      "evidence": [
+        "snapshot",
+        "computed-checks",
+        "protocol"
+      ],
+      "checks": [],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Exact frozen datasets and recipes in PROTOCOL.md; no universal or causal claim.",
+      "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    },
+    {
+      "id": "resource-and-source",
+      "kind": "derived",
+      "statement": "The original screen and diagnostic used1.62639allocatedGPUhours; source hashes identify unchanged scientific modules. This excludes billing and node overhead; million-sweep final usage is pending.",
+      "locations": [
+        "appendixB"
+      ],
+      "evidence": [
+        "source-origins",
+        "historical-audit",
+        "resource-accounting"
+      ],
+      "checks": [
+        {
+          "operation": "value",
+          "operands": [
+            {
+              "artifact": "resource-accounting",
+              "pointer": "/allocated_gpu_hours"
+            }
+          ],
+          "expected": 1.62639,
+          "abs_tol": 5e-06,
+          "unit": "allocated GPU hours"
+        }
+      ],
+      "review": "checked",
+      "reviewer": "Codex self-review; not independent review",
+      "scope": "Historical allocated container time refreshed from seven unique settled receipts; not monetary billing.",
+      "statistical_unit": "Three optimization seeds on one fixed dataset where aggregated; sample SD, not a confidence interval.",
+      "alternatives_not_excluded": "Representation, width, optimization, domain and tuning interactions; finite-domain fitting does not identify a modular algorithm."
+    }
+  ]
+}

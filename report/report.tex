@@ -5,7 +5,7 @@
 \usepackage{amsmath,amssymb,booktabs,graphicx,microtype,xcolor}
 \usepackage[colorlinks=true,allcolors=linkblue]{hyperref}
 \definecolor{linkblue}{HTML}{1849A9}
-\hypersetup{pdftitle={Can a neural network learn the remainder?},pdfauthor={Antreas Antoniou},pdfsubject={Modulo 7: completed small-data screen and preliminary million-example validation}}
+\hypersetup{pdftitle={Can a neural network learn the remainder?},pdfauthor={Antreas Antoniou},pdfsubject={Modulo 7: completed small-data screen and 560-fit validation draft}}
 \newcommand{\repo}{https://github.com/AntreasAntoniou/learning-modulo-seven}
 \newcommand{\smallnote}[1]{{\small\color{black!70}#1}}
 \title{Can a neural network learn the remainder?\\
@@ -15,29 +15,31 @@
 \begin{document}
 \maketitle
 \begin{center}
-\small\textbf{Working research report $\cdot$ 14 October 2026 $\cdot$ Version 0.1}\\
-Completed small-data screen; preliminary validation from the million-example follow-up.\\
+\small\textbf{Working research report $\cdot$ 15 October 2026 $\cdot$ Version 0.2 draft}\\
+Completed small-data screen; dated 560-of-576-fit validation snapshot.\\
 Independent report using the NeurIPS preprint template; not a NeurIPS submission.
 \end{center}
 
 \begin{abstract}
-Modulo 7 is a tiny program and an awkward learning problem. Adjacent integers usually
-have different labels, yet the answer repeats forever. I wanted to see what happens
-when we ask ordinary neural architectures to discover that structure from examples,
-and how the answer changes with representation, depth and data. We compare scalar
-and binary inputs across 16 architecture variants and three training-set sizes.
-In the completed screen, a shallow conditional hypernetwork reaches
-\textbf{94.56\% $\pm$ 2.12\%} on unseen integers within the training range with
-65,536 examples, but \textbf{11.94\% $\pm$ 2.39\%} outside it. Smaller datasets leave
-that configuration near chance. Other hypernetworks sometimes succeed with 4,096
-examples, with substantial variation across seeds. A separate diagnostic exposing
-every bit during training improves some outside-range outcomes without making them
-reliable. We then specify a larger, ongoing experiment: one million unique examples,
-ten passes, three weight decays and three seeds. Its first twelve completed fits
-already show that very accurate within-range validation can coexist with widely
-different outside-range behaviour. Final model selection and test evaluation for
-that sweep have not happened. Throughout, $\pm$ denotes sample standard deviation
-over three optimisation seeds, not a confidence interval.
+Modulo 7 has a short exact solution, but a network trained on examples must learn
+how to represent and use its periodic structure. We study this problem with scalar
+and binary inputs, 16 architecture variants and a target of roughly 32,768 learned
+parameters. In a completed short-budget screen, a shallow conditional hypernetwork
+reaches \textbf{94.56\% $\pm$ 2.12\%} test accuracy within the training range with
+65,536 examples, but \textbf{11.94\% $\pm$ 2.39\%} outside it. Smaller training sets
+leave that configuration near chance; a deeper generator has strongly mixed seed
+outcomes. A separate observed-bit diagnostic improves some outside-range results
+without making them consistent. We then examine a larger experiment with one
+million unique training integers and ten passes per fit. Its dated snapshot
+contains \textbf{560 of 576 fits}, including the complete 288-fit binary grid.
+At the checkpoint chosen by within-range validation loss, 14 binary fits reach at
+least 99\% within-range accuracy and seven reach at least 99\% on both validation
+ranges. These outcomes occur in residual MLPs and conditional hypernetworks, but
+no fixed learning-rate/decay setting reaches 99\% on both ranges across all three
+seeds. The 272 completed scalar fits retain cross-entropy close to uniform
+prediction. The follow-up's final selection and test phase remain pending.
+Throughout, $\pm$ denotes sample standard deviation over three optimisation seeds
+on one fixed dataset, not a confidence interval.
 \end{abstract}
 
 \section{A small function with a useful sting}
@@ -47,7 +49,7 @@ a network is a collection of input--output pairs, the useful structure has to co
 from somewhere: the input representation, the architecture, or what optimisation
 manages to build out of the examples.
 
-This is what I wanted to poke at. A model can be quite good at filling gaps between
+The experiment separates two abilities. A model can be quite good at filling gaps between
 the numbers it has seen and still have no dependable way to continue the pattern.
 So we ask two separate questions. Can it predict \emph{unseen values within the
 training range}? And does that prediction survive when we move \emph{outside the
@@ -98,9 +100,9 @@ The conditional hypernetworks have the form the experiment was designed to test:
 \]
 Only $\theta$ is independently learned. For each example, $g$ emits \emph{all}
 weights and biases of $f$; $f$ then processes that same example. Gradients pass
-through both computations, but $f$ owns no stored trainable parameters. The idea
-of generating one network's weights with another goes back to HyperNetworks
-\cite{hyper}; here the generation is conditioned directly on the current input.
+through both computations, but $f$ owns no stored trainable parameters. Generating one network's
+weights with another is the HyperNetworks formulation \cite{hyper}; here generation
+is conditioned directly on the current input.
 We vary $g$'s depth over 2, 8 and 12 at $f$ depth 3, then vary $f$ over 1, 3 and 5
 at $g$ depth 8. Hidden layers in $f$ have width eight.
 
@@ -281,96 +283,159 @@ Even perfect performance here would not establish generalisation to arbitrary
 integer lengths or to every larger number.
 
 \newpage
-\section{First completed trajectories: encouraging, uneven, still validation}
+\section{Validation snapshot of the million-example sweep}
+This draft uses a fixed snapshot verified on \textbf{15 October 2026 at 16:48:57 UTC}.
+It contains 560 complete fits: all 288 binary fits and 272 of 288 scalar fits.
+The missing 16 are two scalar Transformer-8 fits and fourteen scalar Transformer-12
+fits. Each included fit completed all ten passes. The counts below describe the
+snapshot; they do not freeze the final hyperparameter choices or report test scores.
+
 \begin{figure}[h!]
 \centering
-\includegraphics[width=\linewidth]{figures/million-learning-curves.pdf}
-\caption{The first six completed zero-decay fits of binary $g2/f3$, through ten
-million presentations. Training loss is averaged over exact 5,000-example windows;
-both loss axes are logarithmic. Outside accuracy uses the diagnostic validation
-set. Dotted lines mark uniform-prediction cross-entropy $\log 7$ or accuracy $1/7$.
-These are six fits from an ongoing 576-fit sweep, not a comparison of all families.}
+\includegraphics[width=\linewidth]{figures/million-binary-overview.pdf}
+\caption{All 288 binary fits in the million-example snapshot: 18 per architecture,
+covering six learning-rate/decay settings and three seeds. Each point uses the
+checkpoint with minimum within-validation loss, including in the outside-range
+panel. Colours and shapes identify seeds; small vertical offsets separate settings
+and have no quantitative meaning. The dotted line marks $1/7$ accuracy. The two
+panels use the same fits, and neither uses test data.}
+\label{fig:million-overview}
+\end{figure}
+
+Fourteen binary fits reach at least 99\% within-range validation accuracy; seven
+reach that level on both validation ranges at the same checkpoint. The latter
+comprise two residual MLP-20 fits, two residual MLP-50 fits, and one each from
+$g2/f3$, $g12/f3$ and $g8/f5$. The 99\% threshold is a post-hoc descriptive summary,
+not a selection criterion or a significance test. Figure~\ref{fig:million-overview}
+shows all scores, including those below it. None of the 96 binary settings
+(16 variants $\times$ six recipes) reaches this threshold on both ranges in all
+three seeds.
+
+The scalar results occupy a much narrower range. Across the 272 completed fits,
+within-validation accuracy at the retained checkpoint is 14.20--15.86\%, and
+cross-entropy is 1.94504--1.94572, close to $\log 7\approx1.94591$ for uniform
+prediction. These are results for this encoding, model budget and optimisation
+recipe. Sixteen scalar fits are still absent, and these observations do not establish
+that a scalar-input network cannot learn modulo arithmetic.
+
+\newpage
+\section{Learning trajectories and variation across seeds}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\linewidth]{figures/million-draft-learning-curves.pdf}
+\caption{Four illustrative binary recipes, with all three seeds in each row.
+Recipes were chosen after inspecting the snapshot to show contrasting outcomes;
+they are not the final validation-selected configurations. All use zero decay.
+Training CE is the sample-weighted mean over each exact 5,000-presentation window;
+within CE and outside accuracy use the validation sets. Every recorded validation
+point is plotted. Loss axes are logarithmic; dotted lines mark $\log 7$ or $1/7$.
+Colours are consistent across panels.}
 \label{fig:live}
 \end{figure}
 
-At the lower learning rate, all three zero-decay seeds reach more than 99\%
-within-range validation accuracy at their selected checkpoint. Yet their
-outside-validation accuracies are 35.16\%, 19.01\% and 98.23\%. The same
-architecture, dataset and optimiser can arrive at solutions that agree almost
-perfectly on the familiar range and behave very differently beyond it.
-
-The higher learning rate makes the seed sensitivity even harder to ignore. One
-zero-decay seed reaches 99.88\% within and 99.72\% outside validation; another
-remains near chance at its selected checkpoint. That successful seed is worth
-investigating. It is not a reliable three-seed result.
-
-The curves also stop us from naming every late improvement ``grokking.'' In the
-classic usage, generalisation improves long after training performance has become
-good \cite{grokking}. In the lower-learning-rate trajectories here, training and
-within-validation loss improve together during a late sharp change. We have not
-established a prolonged memorisation-then-generalisation separation.
-
-This public snapshot includes \textbf{twelve completed fits}, collected on
-\textbf{14 October 2026 at 13:06 UTC}: $g2/f3$ only, two learning rates, weight decays
-0 and 0.01, all three seeds. Weight decay 0.1 and the remaining architecture grid
-are absent from this frozen snapshot. The next page lists every included outcome,
-including the failures. No weight-decay winner has been chosen, and no test
-evaluation has been performed for the million-example experiment.
+The residual controls change the interpretation of the early hypernetwork results.
+At learning rate 0.003 and zero decay, one seed of each residual depth learns both
+ranges accurately while the other two remain near $\log 7$ within-validation loss.
+The successful seeds differ between depths: seed 303 for depth 20 and seed 101 for
+depth 50. High outside-range accuracy is therefore possible in this experiment
+without generating network weights per example. It remains unreliable across seeds.
 
 \newpage
-\begin{table}[t!]
+\subsection{A complete hyperparameter slice}
+\begin{table}[h!]
 \centering
-\caption{Every completed million-example fit in this snapshot. All rows are
-binary $g2/f3$. The checkpoint is selected by within-validation cross-entropy.
-Outside accuracy is measured at that same checkpoint, not at its own maximum.
-The checkpoint column counts millions of example presentations.}
+\caption{All 18 binary $g2/f3$ fits in the dated snapshot. Accuracy is percent at
+the within-loss-selected checkpoint, with outside accuracy taken at that same
+checkpoint. Seed columns are shown individually. No row is designated the final
+selected recipe.}
 \small
-\begin{tabular}{rrrrrrr}
+\begin{tabular}{rr rrr rrr}
 \toprule
-Decay & LR & Seed & Checkpoint & Within CE & Within (\%) & Outside (\%)\\
+& & \multicolumn{3}{c}{Within validation} & \multicolumn{3}{c}{Outside validation}\\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}
+LR & Decay & 101 & 202 & 303 & 101 & 202 & 303\\
 \midrule
-\input{tables/million.tex}
+\input{tables/million-hyper-settings.tex}
 \end{tabular}
 \label{tab:live}
 \end{table}
 
-\section{What I would take from this so far}
-Giving a model more examples can change the result dramatically, and starting
-with 4,096 examples would have missed the repeatable shallow-hypernetwork result
-in the completed screen. At the same time, the deeper generator's mixed seeds
-make a simple ``more data fixes it'' conclusion untenable. How the architecture
-uses those examples, and where optimisation takes it, matter here.
+For binary $g2/f3$ at learning rate 0.0003 and zero decay, all three seeds exceed
+99\% within-range accuracy, while outside accuracy ranges from 19.01\% to 98.23\%.
+Adding decay 0.01 also produces three high within-range scores, with outside
+accuracies of 39.48\%, 91.10\% and 96.18\%. At decay 0.1, the same learning rate
+leaves all three within-range scores below 16\%. A single smooth ``more
+regularisation helps'' account does not describe this slice.
 
-The most useful tension is between almost perfect prediction inside the domain
-and disagreement outside it. That suggests an experiment beyond another
-leaderboard: take successful within-range fits, compare the computations they
-have acquired, and ask what distinguishes those that extend the rule from those
-that do not. Retrained generator/component controls, independent dataset seeds
-and carefully matched domain shifts would help answer that. None of those
-follow-ups is a result of the current sweep.
+The higher learning rate changes which trajectories succeed. With zero decay,
+seed 303 reaches 99.88\% within and 99.72\% outside; the other two reach 15.44\%
+and 34.75\% within. Across this small grid, successful within-range fits can still
+have very different outside-range behaviour. The fixed test sets will assess the
+configurations selected from all three seeds, rather than promoting one successful
+seed as an architecture-level result.
 
-For the ongoing experiment, the immediate job is more prosaic: finish the full
-grid, keep the bad seeds, freeze the validation choices, and open the test sets
-once. If the strongest outside-validation result survives that procedure across
-seeds, we will have a much better reason to inspect its mechanism. If it does
-not, that will also tell us something useful about how easy it is to mistake one
-fortunate training trajectory for a dependable learner.
+\subsection{What a late change does, and does not, establish}
+Some trajectories remain near uniform-prediction loss for a substantial part of
+training before improving sharply. This makes endpoint comparisons incomplete:
+two fits can look alike early and finish very differently under the same budget.
+The full curves retain every recorded 5,000-presentation observation supporting
+that statement.
+
+These trajectories also require care with the term ``grokking.'' The original
+report describes generalisation improving long after training performance has
+become good \cite{grokking}. In the lower-learning-rate $g2/f3$ examples here,
+training-window and within-validation loss improve together during a late change.
+The window is measured on changing training batches rather than a fixed full
+training-set evaluation, so it is not itself a memorisation audit. We have not
+established the prolonged memorisation-then-generalisation separation needed for
+that interpretation.
+
+\newpage
+\section{What the evidence supports so far}
+The completed short screen shows that increasing the number of unique examples
+can change which architectures look useful under a fixed step budget. Its shallow
+conditional hypernetwork learns unseen within-range values with 65,536 examples,
+while the same configuration remains near chance at smaller amounts. The deeper
+generator's mixed seeds show why this cannot be reduced to a monotonic rule about
+data or depth.
+
+The million-example snapshot broadens that picture. Several binary architectures
+can reach high accuracy outside the training interval, including residual MLPs.
+Most tested fits do not. Even recipes that reliably fit the within-range validation
+set can disagree substantially outside it. The stronger statement that one of
+these recipes is a dependable learner still needs the full selection procedure,
+the held-out tests and replication beyond the current three training seeds.
+
+The next scientific question is what the successful computations have in common.
+For example, do accurate outside-range fits implement the repeating binary weights
+$1,2,4$, or a different finite-domain approximation? The present measurements do
+not identify the learned algorithm. Retrained generator/component controls,
+independent dataset seeds and matched domain shifts could distinguish those
+possibilities. These are proposed follow-ups, not results from the current sweep.
+
+The remaining work under the present protocol is to complete the 16 missing fits,
+freeze the choices using within-validation loss across all three seeds, and evaluate
+the 96 retained checkpoints once on both test sets. The final report will replace
+this dated snapshot with those results while retaining this version's evidence.
 
 \paragraph{Scope and limitations.}
-The dataset is fixed; three optimisation seeds give limited information about
-variability. Architecture widths differ under an approximate parameter budget,
-and equal parameters do not mean equal computation. Learning-rate searches are
-small. The initial screen is exploratory, and its diagnostic and frozen mechanism
-probes were motivated by observed results. The follow-up uses a much longer
-training budget and a different domain. Neither experiment tests variable-length
-arithmetic, formal algorithm discovery or behaviour over unbounded integers.
+Three optimisation seeds on one fixed dataset measure limited training variation;
+they are not independent samples of the data-generating split. The 576 fits are
+not 576 independent replications of one method. Parameter matching changes width
+with depth and does not match FLOPs. Two learning rates and three decay values
+are a bounded search, not evidence that every family has been optimally tuned.
+Repeated checkpoint selection can overfit validation. The 99\% counts and the
+illustrative trajectory choices are descriptive decisions made after viewing the
+results. The original screen, observed-bit diagnostic and longer follow-up change
+several factors and must remain separate comparisons. None tests variable-length
+arithmetic, negative integers, formal algorithm discovery or an unbounded domain.
 
 \paragraph{Authorship and execution.}
 The research question, requested architecture families and follow-up choices are
 Antreas's. Protocol development, implementation, analysis and report preparation
-were assisted by Codex under his direction. The experiments ran on his Olympus
-GPU research infrastructure. This is a working scientific report, not an
-independent human review or a peer-reviewed publication.
+were assisted by Codex under his direction. This draft has undergone computational
+checks and self-review; it has not received independent scientific review or
+Antreas's approval of the revised prose. It is not a peer-reviewed publication.
 
 \newpage
 \appendix
@@ -403,53 +468,58 @@ Architecture & Scalar within & Binary within & Binary outside\\
 \href{\repo}{The public repository} includes all 1,728 primary fits and all 96
 diagnostic fits, their recorded learning curves, per-seed selected results and
 summary tables. The modulo subset of the primary screen comprises 576 fits.
-The million-example snapshot provides its twelve completed fit summaries,
-24,000 validation observations and 960,000 individual training-batch records.
-Compressed JSONL retains numeric precision; the paper rounds values for readability.
+The original twelve-fit million-example export remains available with its
+24,000 validation observations and 960,000 individual training batches. The new
+\texttt{draft-2026-10-15} directory adds 560 fit summaries, all 192 planned
+three-seed recipe cells (with incomplete means left blank), and 24,000 full-resolution
+validation observations for the twelve illustrative trajectories. The dated
+\href{\repo/releases/tag/v0.1.0}{v0.1.0 release} is preserved. This revised draft
+is prepared locally and is not yet the final public release.
 
-The original completed-screen audit verified 1,840 stored artifacts by exact
-generation and SHA-256, recomputed 7,296 evaluation sets, and replayed 912 selected
-checkpoints on 16 examples per evaluation split. The replay was a bounded check,
-not a full independent retraining. Those archived checkpoint and prediction
-payloads are not included in this first public release. Their content hashes are
-retained in the exported fit records; the public checks recompute selection and
-summary statistics from the released measurements.
+The completed-screen audit verified 1,840 stored artifacts by exact generation and
+SHA-256, recomputed 7,296 evaluation sets, and replayed 912 selected checkpoints
+on 16 examples per evaluation split. That was a bounded check, not independent
+retraining. Checkpoint and per-example prediction payloads are not part of the
+initial public release; their hashes are retained in the exported fit records.
 
-For the new snapshot, every checkpoint segment was downloaded with its recorded
-generation and verified against its hash. All twelve chains cover presentations
-0 through 10,000,000 without gaps. The export checks 80,000 batches and 2,000
-validation observations per fit, and independently reconstructs every reported
-5,000-example training-loss window. No test file is needed for these checks.
-The public protocol suite also checks split separation, scalar encoding uniqueness,
-all 32 architecture/encoding forward-and-backward paths, exact sample boundaries,
-validation-only selection and deterministic checkpoint resumption on a small CPU
-case. These software checks support implementation claims; the scientific results
-remain the actual recorded experiments.
+For the 560-fit follow-up snapshot, the private metric audit covers 56,007 linked
+segments, 44,800,000 training-batch records and 1,120,000 validation records.
+Each complete history covers presentations 0 through 10,000,000 without gaps or
+double-counting replayed work. The audit checks finite values, exact sample and
+step boundaries, selected checkpoints, and the sample-weighted training windows.
+The draft exporter rechecks all 560 compressed validation-history hashes and
+recomputes each within-selected checkpoint from its 2,000 observations. Outside
+scores are joined to that checkpoint, never independently maximised. The complete
+large training histories remain in the research archive pending final asset packaging;
+they are not all included in this compact draft export.
+
+Public checks reproduce the descriptive counts, three-seed means and sample
+standard deviations, the shown trajectories, and the retained early-snapshot
+training-window calculations. The protocol suite additionally exercises split
+separation, scalar encoding uniqueness, all 32 architecture/encoding forward and
+backward paths, exact sample boundaries, validation-only selection and deterministic
+checkpoint resumption on a small CPU case. Checks establish specific consistency
+properties; they are not an independent retraining or a causal explanation of the
+observed differences. No million-example test data are used in this draft.
 
 \paragraph{Source and environment.}
-The repository records source commits and byte hashes for the exported scientific
-modules. Primary training used source \texttt{68c142af3f3e}; the observed-bit
-diagnostic used \texttt{78d417c1bae3}; the million-example sweep uses
-\texttt{de2c10e63431}. The million-example model, data, training and selection files
-are exported unchanged. The public version replaces cloud storage with a local
-adapter and supplies a local command-line entry point. GPU execution used
-PyTorch 2.8.0 with CUDA 12.8, NumPy 2.3.2 and Python 3.13.13; CPU reproduction
-can differ numerically from GPU execution.
+Source commits and byte hashes identify the exported scientific modules:
+\texttt{68c142af3f3e} for primary training, \texttt{78d417c1bae3} for the diagnostic,
+and \texttt{de2c10e63431} for the million-example sweep. Scientific modules are
+unchanged; the public storage adapter and entry point support local reproduction.
+GPU runs used PyTorch 2.8.0, CUDA 12.8, NumPy 2.3.2 and Python 3.13.13.
+CPU reproduction can differ numerically.
 
 \paragraph{Resource measurement.}
-The completed primary screen and diagnostic consumed 1.62639 allocated GPU-hours,
-including setup failures, with one GPU allocated at a time. This measures worker
-allocation, not invoiced cost or the longer virtual-machine lifecycle. No final
-usage total is yet reported for the ongoing million-example sweep.
+The completed primary screen and diagnostic used 1.62639 allocated GPU-hours,
+including setup failures, with one GPU at a time. This excludes invoiced cost
+and virtual-machine overhead. Final usage for the million-example sweep is pending.
 
 \paragraph{Reading the repository.}
-Start with \texttt{README.md}; \texttt{PROTOCOL.md} lists the exact splits and
-selection rules. \texttt{results/screen/} and \texttt{results/observed\_bits/}
-contain completed results. \texttt{results/million/} is explicitly partial.
-\texttt{analysis/make\_figures.py} rebuilds the figures and numeric tables from
-those files. \texttt{report/report.tex} is the editable report source. The NeurIPS
-2026 template is downloaded from its official host in preprint mode, with a pinned
-hash; the template does not imply conference affiliation or acceptance.
+See \texttt{PROTOCOL.md} for the full splits and selection rules. Rebuild figures
+with \texttt{analysis/make\_figures.py} and edit \texttt{report/report.tex}. The
+official NeurIPS 2026 template is hash-pinned and used in preprint mode without
+a conference affiliation claim.
 
 \begin{thebibliography}{9}
 \small

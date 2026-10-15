@@ -1,6 +1,6 @@
 # Can a neural network learn the remainder?
 
-**[Read the nine-page report](report/report.pdf)** · [Editable LaTeX](report/report.tex) · [Protocol](PROTOCOL.md) · [Measurements](results/)
+**[Read the updated draft](report/report.pdf)** · [Editable LaTeX](report/report.tex) · [Protocol](PROTOCOL.md) · [Measurements](results/)
 
 Take an integer, divide by seven, keep the remainder. A tiny program. Now give a neural network examples of that function and see whether it can discover something that keeps working when the numbers get larger.
 
@@ -12,9 +12,9 @@ That is the question here. We compare ordinary MLPs, residual MLPs, transformers
 |---|---|---|
 | Initial nonlinear-function screen | All 1,728 fits, including 576 modulo fits; three data amounts; all learning curves and selected per-seed scores | Complete |
 | Observed-bit modulo diagnostic | All 96 fits and their curves; every training bit varies | Complete, separately reported exploratory diagnostic |
-| One-million-example modulo sweep | Frozen snapshot of the first **12 completed fits**, their 24,000 validation observations and 960,000 batch records, collected **14 October 2026, 13:06 UTC** | **Partial: 12 of 576 fits in this snapshot; no final selection or test evaluation** |
+| One-million-example modulo sweep | Dated **560-fit draft snapshot**, verified **15 October 2026, 16:48:57 UTC**; all binary fits, 272 scalar fits, per-fit metrics and twelve illustrative full-resolution trajectories | **Partial: 560 of 576 fits; no frozen sweep selection or final tests** |
 
-The live sweep continues independently of this dated snapshot. The report and public data will be updated after all fits finish and the validation-only selection is frozen. A GitHub release preserves this first version.
+This branch contains a local working draft; it has not been pushed or released. The live sweep continues independently of the fixed snapshot. The final report will follow all 576 fits, frozen validation-only selection and the single final test phase. [v0.1.0](https://github.com/AntreasAntoniou/learning-modulo-seven/releases/tag/v0.1.0) preserves the original nine-page report and twelve-fit snapshot; those data remain unchanged.
 
 ## What we know so far
 
@@ -22,9 +22,13 @@ With 65,536 training examples, the shallow binary hypernetwork `g2/f3` reaches *
 
 ![Individual seeds across three data amounts](report/figures/data-and-seeds.png)
 
-The million-example follow-up is a longer experiment on a wider domain. In its first three completed zero-decay fits at learning rate 0.0003, within-range validation exceeds 99% for every seed, while outside-validation accuracy at those selected checkpoints is 35.16%, 19.01% and 98.23%. Those are **validation observations from one architecture**, not final test results or a winner across the grid.
+The million-example follow-up uses a longer budget and wider domain. Of all **288 completed binary fits**, **14 reach at least 99% within-range validation accuracy** and **seven reach that level on both validation ranges**, at the checkpoint selected by within-validation loss. Those seven include residual MLPs and conditional hypernetworks. No fixed architecture/LR/decay setting reaches both thresholds across all three seeds. The 99% counts are descriptive, chosen after observing the results; they do not select models.
 
-![First six complete million-example learning trajectories](report/figures/million-learning-curves.png)
+![All binary fits at their within-selected checkpoint](report/figures/million-binary-overview.png)
+
+The 272 completed scalar fits have within-validation cross-entropy 1.94504–1.94572, close to uniform prediction. Sixteen scalar fits are missing from this snapshot. These observations concern the tested models and recipe, not an impossibility claim about scalar representations.
+
+![Four illustrative recipes with all seeds retained](report/figures/million-draft-learning-curves.png)
 
 Every ± above is the **sample standard deviation across three optimisation seeds**, not a confidence interval. The dataset is fixed. Equal training steps, equal passes and equal learned-parameter counts are different comparisons; the report spells out what each experiment holds fixed.
 
@@ -82,6 +86,8 @@ python experiments/observed_bits/suite.py --config experiments/observed_bits/mod
 
 `all-fits.jsonl.gz` contains every fit, including both learning rates and failed-to-learn seeds. `selected-fits.csv` contains the within-validation-selected learning rate for each seed; `summary.csv` aggregates those seeds. The initial screen uses `val`/`test` for the within domain and `ood_val`/`ood` for the outside domain. The million-example files use explicit `val_within`/`val_outside` names. Loss is cross-entropy for modulo; regression scores also appear in the wider screen's files.
 
-The first release contains metrics, full recorded curves, source, figures and report. Archived model checkpoints and per-example prediction payloads are not included; their hashes are retained where available. No claim is made that the released metrics alone independently reproduce every prediction. [Verification scope](provenance/verification.json) distinguishes direct public checks from the completed private artifact audit.
+The first release contains metrics, full recorded curves, source, figures and report. The new [draft data](results/million/draft-2026-10-15/) contain 560 fit summaries, all 192 planned recipe cells with incomplete averages blank, and 24,000 validation points for twelve illustrative trajectories. Full private histories for all 560 fits were audited; the large batch histories are not part of this compact draft export. Archived model checkpoints and per-example prediction payloads are not included; their hashes are retained where available. No claim is made that the released metrics alone independently reproduce every prediction. [Verification scope](provenance/verification.json) distinguishes direct public checks from the completed private artifact audit.
+
+The [claim ledger](claim-ledger.json) maps manuscript claims to hashed evidence. Its [audit](provenance/claim-audit.json) checks 65 numerical statements; these are consistency checks, not independent scientific certification. All eleven PDF pages were visually inspected, and the 40 protocol tests passed. Antreas has not yet approved the revised prose.
 
 The question, architecture choices and follow-up direction are Antreas Antoniou's. Protocol development, implementation, analysis and writing were assisted by Codex under his direction. The report uses the official NeurIPS preprint template; it is an independent working report, not a NeurIPS submission or acceptance. See [third-party attribution](THIRD_PARTY.md).

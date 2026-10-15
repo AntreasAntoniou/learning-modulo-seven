@@ -117,3 +117,5 @@ def live():
 
 if __name__=='__main__':
     style();primary();live()
+    from million_draft import build
+    build()

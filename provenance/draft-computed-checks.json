@@ -1,0 +1,28 @@
+{
+  "unchanged_scientific_files": 9,
+  "screen": {
+    "fits": 1728,
+    "selected_fits": 864,
+    "summary_cells": 288
+  },
+  "observed_bits": {
+    "fits": 96,
+    "selected_fits": 48,
+    "summary_cells": 16
+  },
+  "million_snapshot": {
+    "completed_fits": 12,
+    "validation_observations": 24000,
+    "batch_observations": 960000,
+    "test_evaluated": false
+  },
+  "million_draft": {
+    "completed_fits": 560,
+    "missing_fits": 16,
+    "complete_three_seed_cells": 186,
+    "illustrative_validation_rows": 24000,
+    "early_results_unchanged": 12,
+    "test_evaluated": false,
+    "sweep_selection_frozen": false
+  }
+}

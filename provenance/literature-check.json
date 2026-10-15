@@ -1,0 +1,55 @@
+{
+  "checked_utc": "2026-10-15",
+  "scope": "Primary arXiv abstracts and metadata checked for these specific background statements. Not a novelty search.",
+  "references": [
+    {
+      "key": "hyper",
+      "url": "https://arxiv.org/abs/1609.09106v4",
+      "title": "HyperNetworks",
+      "authors": [
+        "David Ha",
+        "Andrew Dai",
+        "Quoc V. Le"
+      ],
+      "statement": "A hypernetwork generates another network's weights and can be trained end to end."
+    },
+    {
+      "key": "relational",
+      "url": "https://arxiv.org/abs/1706.01427v1",
+      "title": "A simple neural network module for relational reasoning",
+      "authors": [
+        "Adam Santoro",
+        "David Raposo",
+        "David G. T. Barrett",
+        "Mateusz Malinowski",
+        "Razvan Pascanu",
+        "Peter Battaglia",
+        "Timothy Lillicrap"
+      ],
+      "statement": "Relation Networks are proposed as a module for learning relations; the report uses an adaptation, not a replication of that benchmark."
+    },
+    {
+      "key": "adamw",
+      "url": "https://arxiv.org/abs/1711.05101v3",
+      "title": "Decoupled Weight Decay Regularization",
+      "authors": [
+        "Ilya Loshchilov",
+        "Frank Hutter"
+      ],
+      "statement": "AdamW decouples weight decay from the loss-gradient update."
+    },
+    {
+      "key": "grokking",
+      "url": "https://arxiv.org/abs/2201.02177v1",
+      "title": "Grokking: Generalization Beyond Overfitting on Small Algorithmic Datasets",
+      "authors": [
+        "Alethea Power",
+        "Yuri Burda",
+        "Harri Edwards",
+        "Igor Babuschkin",
+        "Vedant Misra"
+      ],
+      "statement": "Generalisation can improve long after overfitting; a late joint training and validation loss change alone does not demonstrate this separation."
+    }
+  ]
+}
